@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>トラック積載配置図 自動生成シミュレーター（複数車両対応版）</title>
+  <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=hE-dsT8IR6HW88ouE8YEQ_-32jtTk3XFDwWLKDGhd3poFDx0IyLShhTLcxAPf7tOdffS4UJUPhzZMBC36h-O_TM4dxuDPGsg0D174cqP_Xi_h8vADUD05lGS9c8LY6itI-9Sr88Or_TSiwGqmZ2hwN_OKndpZzq2RdiWL75oygTQVkMguwKrKarYfzo85jkmTwZvflVcq5d7bCaCvQf2Vv6evxh-Yl-G9ft2VQyJAD32HTGu06kDGurPkMioJ7GO4OQ5ZGmAYqev4XWF_1_fHUMJ8V1PXKEUAneYk79rgYcB2tIysdqf5QuNkdC-KSI5FQeDboPP8xZtZWmFDNZ2s2Io_sUpennJ2FpRAC_4xGE5JGeqUlkc9_Q1p0SIrkmRdKoxAujQ3fVO7yd26U7QYS-YmEI0XNoUyQlaOXEeIrHb_04F7FUkFH4VbvZIcdH9kHspR2K5FeTSsjkY_GpizpwUhX03XB4H3TqKXrMsMl5pEgknBHHqYgmyR0n_DZ3dszr7yiQA0rbonHiKSgxMKC-7oZ_O8M0zfGEKpYMQ1uFh6wjgcvla9aTDu2sl8yV8XGmrueDyllx7FD4e3Bpbbj1Oz4EIDP2VD81V0ipe1bxznGz_PvcbrJ5NybpeT6s0TjVa_PpIY9POddAutEHgf2BDqoJPwzG0Wq7Jcl0fsg8eUzqJcY1LNnjYY4W5a8yeYx8AJ3ltTaE0372JU27lRlSzritHyovXN15JJ7h3ek51X27nYEOkCCNIuF-qWtsYb6bOeCFd1TUgpMFtMSrGzzYDHf7DHUSvkV9P1egKr36gaTZH_sqYtc1ZjP7WMlDNs3mX4y2aSkGpLFIJHGXu92dP7ebk0r7nKYVu7nxv8HuiA5wt2pxm0ObmvlZKO2p5mdd5R5BJhn1r7DoldRMSo_VxTmUJOuGm0A2UfEJCtY9Qwy3qDgqzcvxpyqRR572nl6UH2jnJrzoCvufCRD9N-pkAluOzIjeP06W23PrS78b91Dxos8W4U_3xAaT0aZQ-yCy8PaaGGAZaOwzS98uqdFbvoxX_eDcuO1vgJajtLXqF-4HJAvqEW5rLKteaFRondKVZTw9ROu3DgzoLcg_MxkGjIW-OIzTg_s7fkpuOr0glOl2JM7sQVBRIhMbXuTuPQNnq911S_imrCgGoCHxJAqLy0MjAk3ogCktjs502o1nrgAW63kt1LIspeeBwCXGukwlcWAROwNWaWawjxb0Y429QGpdd8d-q48qMBKtXOhjsTfnoihiqm_o3gR5U2myBW7Ms2SqQIKVwZ0EjnJvHFl4KWrR4fTaiBw__UNZnXZhZH2_rAd3E4QuPduwaAflTlTxtbqUC_oALnyWa5ZlseNJ8GhJ3QMNFMbDrrJXkz7_j-_8jv5SB-ZQPfpMlnzWxtDVhh5rg6BmQdNcQxSaHTJVnC-aWKZ24guhKtzjtV8RBO7n2LAlQ3tfAd8lbBO4SmegtykLPSR0EH15Gv9vU2mSZUrGmBWRKSE0d2w1kI7ksmOF7SFoH8g34K-cs6bzrVU5YwcYtxa0zB4lgdMCR8fdBS74mM9NBZO2HzcMnn-v3_k-jwbWFl9KwqucRKjGCio0XdhfbHeMbfsb_8T0HTRfBvRjhRxvoEcqMncz28RikB-wHoPRyKIYBdONUQCC83WsIws42G5w_DEowMu9-VI7_bIhrPwRsIw2AGJgEMQ9C4Wty9LuPyPQMxdya8pPx" nonce="24ad1b5951f37d137f219d9cb11f495d" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9tYWlsLWF0dGFjaG1lbnQuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2F0dGFjaG1lbnQvdS8wLz91aT0yJmlrPWE0OTg0ZjMyNzcmYXR0aWQ9MC4yJnBlcm1tc2dpZD1tc2ctZjoxODc0NDAxMTA4MDMxOTQ3MjI4JnRoPTFhMDMzNWUwNzJkN2MxZGMmdmlldz1hdHQmZGlzcD1zYWZlJnJlYWxhdHRpZD1mX210NzN4anZ0MCZ6dyZzYWRkYmF0PUFOR2pkSl9NS2J2SndUT21sdl9RVDZnWGZPVUNrUllfVkZJbExiXzBSUU1EODBvU2lmWUw3NnQtaktHcnlOLTljYXN6aWZZT0I3NngxczlVZlVoa1I4ZFFiSFpsME1FaV9OQ1FDYkpvYjBROHl4aU1ybHowbXNBTU5mWmtnWDVMUjAxQm9xTklMRVNSbERLcUcxTFBRUmVOamRhNl9XaG1sR1BWUHpmVDlFdkIxbEJ3WFBqZHR1dnc3VFFGSzRpYUNoRy16dld2aXp4aldCQmp2azg3a0EwMm1fdVZaM1NaekZDZ0tyanlRTGtDanpLUWZndXBPQ1dUYm5VY1BYTWdjS3VWRTFqTzBLUTlKY2x2d3RjZ043dnFkY0FyaW14SHhoZkNyU1JXX3J2c0g4OVREX1dwNEFoXzM0SGFCMUFEamR5QTdjelJRQWlOazhwcU9WME1hdTY2YUFTaXdaOFZDTkFpRlRvR005UGNSSzJzSzk4OWNfdGNrTTA1U2JQRXNqaVF0NTdSNjh4ZDlBMC1tdExGcVA2T29iaGpQSTk0VFVKWDB1MEVwSUh4ZFI2M09VeEFvWTdQWFQxLVlzUWlWdWEwY1FxU24tMkdPeWRhU0dsOTV3TlUtQXdCX3AtRDFraC1lOEJPMGNnMXI3VGVPSTNDQWpxeUZLSXdPbzd4QVJtMEVnOWRCX0FoYU5WcC1oTlB4RFZiZDdKOXIyTVQzeE9JNzh0aHFCd3BDV2pHZzNOUTZOSlN6NVFOWTg2di1DdlQyRzlvQ3h0OGZfMTU3bVZBQU8wd2d1UWdFakJLZzZUZjFPU2ZSUDFna0ktcmJPWkI3M3lZQ0htdDk1aE1vTnVyeGJBbGpja2hRNVM1QW5QeFo2andFWGVrU3pEVWNJR25lSUZ2bUQ0UU9Mb1gxbDREQlJOVWhHeGlvaEh4bUZXSHlEd1ozTFRLVTJTbUNZdXRXbG9pSkRMUHFyTGV5alFoZXdGV0VDZFlGMWFlTlI1SjFEUjhfQzl0cUVyTTkzeXR4VUlFMS1UUlNVVV94RlgzRkhvZGs2Q1J4dHZNUnkycmlPZVNoZldjSDBmR0VER1NNZkRYT0dQVS02VVh6Q1RaV09teDM4XzhIZlNQU3Bhb3JMZE1MbkZKMnZYZTdxYU5EQUdHa2wwSnpKSm5KWGV1Q0NPblptSk5FeEFTUHFkY2hoWEJ0N0lSV2NGeUh2VEJabnhUSXktQ1JkWW0zMmVZcTRHNnFYNFE4N3hodVJDU1BSWHI1aFR5MWs3azRKUkdlTDE3ODBLS1BJcEg3allWWmQ2RERvdUhaWXpqRnMxdEhRT0YxUnRGVUg3YnY5WEJmV093XzFaS2FFVkdMcFRyZlZnVUFzaUxZbWN0b3ozMjFwelhlYml5b3A1a2lJY1hHOWdDOFE"/><script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- SheetJS (Excel/CSV 読み取り用ライブラリ) -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+      user-select: none;
+    }
+
+    /* グリッド背景 */
+    .truck-bed {
+      background-image: 
+        linear-gradient(to right, rgba(203, 213, 225, 0.5) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(203, 213, 225, 0.5) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+
+    /* 荷物エレメントベース */
+    .placed-item {
+      transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s, opacity 0.2s;
+      touch-action: none;
+    }
+    .placed-item:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      z-index: 100 !important;
+    }
+    .placed-item.dragging {
+      opacity: 0.85;
+      z-index: 200 !important;
+      transition: none !important;
+    }
+
+    /* 全体回転用アニメーションコンテナ */
+    .truck-3d-scene {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* 奥行ラベルの回転アニメーション */
+    .dim-depth-label {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* === 印刷設定 === */
+    @media print {
+      @page {
+        size: A4 landscape;
+        margin: 5mm;
+      }
+
+      html, body {
+        zoom: 1.21;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        background: #fff !important;
+        width: 100% !important;
+        height: auto !important;
+        overflow: visible !important;
+      }
+
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      /* 不要なUI要素を非表示 */
+      aside, header, .no-print, #vehicle-tab-container { 
+        display: none !important; 
+      }
+      
+      /* メインエリア・ビューポートを印刷範囲に連動 */
+      body, main, #main-area, #viewport-stage, #pan-zoom-container {
+        display: block !important;
+        height: auto !important;
+        width: 100% !important;
+        overflow: visible !important;
+        position: static !important;
+        transform: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      /* 車両配置カードの自動レスポンシブ連動グリッド */
+      #vehicles-grid-container {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        gap: 12px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+      }
+
+      .vehicle-card-wrapper {
+        box-sizing: border-box !important;
+        flex: 1 1 31% !important;
+        max-width: 31% !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        margin-bottom: 8px !important;
+        padding: 6px !important;
+        border: 1px solid #94a3b8 !important;
+        box-shadow: none !important;
+        background-color: #ffffff !important;
+      }
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 h-screen flex flex-col overflow-hidden">
+
+  <!-- ヘッダー -->
+  <header class="bg-slate-900 text-white px-6 py-3 shadow-md flex justify-between items-center shrink-0 z-30">
+    <div class="flex items-center gap-3">
+      <i class="fa-solid fa-wand-magic-sparkles text-amber-400 text-2xl"></i>
+      <div>
+        <h1 class="text-lg font-bold tracking-wide flex items-center gap-2">
+          トラック積載配置図 自動生成シミュレーター
+        </h1>
+        <p class="text-[11px] text-slate-400">機種マスター連動・ワンクリック自動レイアウト・複数車両対応</p>
+      </div>
+    </div>
+
+    <!-- サマリー情報 -->
+    <div class="flex items-center gap-4">
+      <div class="hidden md:flex items-center gap-4 bg-slate-800/90 px-4 py-1.5 rounded-lg border border-slate-700 text-sm">
+        <div>
+          <span class="text-slate-400 text-xs">選択車種:</span>
+          <span id="header-vehicle-name" class="font-bold text-amber-300 ml-1">庸車</span>
+        </div>
+        <div class="h-4 w-px bg-slate-600"></div>
+        <div>
+          <span class="text-slate-400 text-xs">床面積利用率:</span>
+          <span id="header-occupancy-rate" class="font-bold text-emerald-400 ml-1">0%</span>
+        </div>
+        <div class="h-4 w-px bg-slate-600"></div>
+        <div>
+          <span class="text-slate-400 text-xs">積載個数:</span>
+          <span id="header-item-count" class="font-bold text-white ml-1">0 台</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 車両追加タブエリア -->
+  <div id="vehicle-tab-container" class="bg-slate-800 text-white px-4 py-2 border-b border-slate-700 flex items-center gap-2 overflow-x-auto shrink-0 z-20">
+    <button id="btn-add-vehicle" class="bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold px-3 py-1.5 rounded-lg flex items-center gap-1 shrink-0 transition shadow">
+      <i class="fa-solid fa-plus"></i> 車両を追加
+    </button>
+    <div id="vehicle-tabs" class="flex items-center gap-1.5">
+      <!-- 車両タブが動的に追加されます -->
+    </div>
+  </div>
+
+  <div class="flex flex-1 overflow-hidden relative">
+    
+    <!-- 左側: 操作パネル -->
+    <aside class="w-88 bg-white border-r border-slate-200 p-4 flex flex-col gap-4 overflow-y-auto shrink-0 shadow-sm z-20" style="width: 360px;">
+      
+      <!-- 1. 車種選択 -->
+      <section class="bg-slate-50 p-3 rounded-xl border border-slate-200 shrink-0">
+        <h2 class="text-xs font-bold text-slate-700 mb-2 flex items-center gap-1.5">
+          <i class="fa-solid fa-truck text-amber-600"></i> ① 車種（荷台サイズ）選択
+        </h2>
+        <select id="vehicle-select" class="w-full bg-white border border-slate-300 rounded-lg px-2.5 py-1.5 text-xs font-medium focus:ring-2 focus:ring-amber-500 outline-none shadow-sm cursor-pointer">
+        </select>
+        
+        <div class="grid grid-cols-2 gap-2 mt-2 text-[11px]">
+          <div>
+            <label class="block text-slate-500 mb-0.5">荷台幅 (mm)</label>
+            <input type="number" id="input-truck-width" class="w-full border border-slate-300 rounded px-2 py-1 text-right font-mono bg-white" step="10">
+          </div>
+          <div>
+            <label class="block text-slate-500 mb-0.5">荷台奥行 (mm)</label>
+            <input type="number" id="input-truck-depth" class="w-full border border-slate-300 rounded px-2 py-1 text-right font-mono bg-white" step="10">
+          </div>
+        </div>
+      </section>
+
+      <!-- Excel / CSV 読み込みエリア（ドラッグ＆ドロップ対応カード） -->
+      <section id="excel-drop-zone" class="bg-emerald-50/80 p-3 rounded-xl border-2 border-dashed border-emerald-300 space-y-2 shrink-0 transition-colors duration-200 cursor-pointer hover:bg-emerald-100/70">
+        <h2 class="text-xs font-bold text-emerald-800 flex items-center gap-1.5 pointer-events-none">
+          <i class="fa-solid fa-file-excel text-emerald-600"></i> Excelから一括読み込み
+        </h2>
+        <div class="pointer-events-none text-center py-1">
+          <i class="fa-solid fa-cloud-arrow-up text-emerald-500 text-xl mb-1"></i>
+          <p class="text-[11px] font-bold text-emerald-800">ここにExcelファイルをドロップ</p>
+          <p class="text-[10px] text-emerald-600">または下のボタンから選択</p>
+        </div>
+        <div>
+          <input type="file" id="excel-file-input" accept=".xlsx, .xls, .csv" class="hidden">
+          <button type="button" id="btn-trigger-excel" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-1.5 rounded-lg transition text-xs flex items-center justify-center gap-1.5 shadow-sm">
+            <i class="fa-solid fa-file-import"></i> ファイルを選択
+          </button>
+        </div>
+        <p class="text-[10px] text-emerald-700 leading-tight pointer-events-none">
+          ※型番が入力されたセルの右隣のセルから数量を取得します（半角・全角区別なし）
+        </p>
+      </section>
+
+      <!-- 2. 機種選択 -->
+      <section class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-2.5 shrink-0">
+        <h2 class="text-xs font-bold text-slate-700 flex items-center justify-between">
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-boxes-stacked text-blue-600"></i> ② 個別荷物選択</span>
+        </h2>
+        
+        <div>
+          <label class="block text-[11px] text-slate-500 mb-0.5">分類フィルタ</label>
+          <select id="category-select" class="w-full bg-white border border-slate-300 rounded px-2.5 py-1.5 text-xs focus:ring-1 focus:ring-blue-500 outline-none">
+            <option value="">すべての分類 (全表示)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-[11px] text-slate-500 mb-0.5">型番・商品名</label>
+          <select id="item-dataset-select" class="w-full bg-white border border-slate-300 rounded px-2.5 py-1.5 text-xs focus:ring-1 focus:ring-blue-500 outline-none font-medium">
+          </select>
+        </div>
+
+        <!-- プレビューと数量 -->
+        <div class="bg-blue-50/80 p-2.5 rounded-lg border border-blue-200 text-xs">
+          <div class="flex justify-between items-center mb-1.5">
+            <span class="font-bold text-blue-900 truncate max-w-[190px]" id="preview-item-name">商品名</span>
+            <span class="text-[10px] bg-blue-200 text-blue-800 px-1.5 py-0.5 rounded font-mono" id="preview-item-size">W0×D0</span>
+          </div>
+          <div class="grid grid-cols-3 gap-1 text-[11px]">
+            <div>
+              <span class="text-slate-500 block text-[10px]">幅(W)</span>
+              <input type="number" id="item-w-input" class="w-full border border-slate-300 rounded px-1 py-0.5 font-mono text-right bg-white text-xs">
+            </div>
+            <div>
+              <span class="text-slate-500 block text-[10px]">奥行(D)</span>
+              <input type="number" id="item-d-input" class="w-full border border-slate-300 rounded px-1 py-0.5 font-mono text-right bg-white text-xs">
+            </div>
+            <div>
+              <span class="text-slate-500 block text-[10px]">数量</span>
+              <input type="number" id="item-count-input" value="1" min="1" max="50" class="w-full border border-slate-300 rounded px-1 py-0.5 font-mono text-right bg-white text-xs">
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between text-xs">
+          <span class="text-slate-600">表示カラー:</span>
+          <div class="flex gap-1.5" id="color-picker-container">
+            <button type="button" class="color-btn w-5 h-5 rounded-full border-2 border-slate-900 bg-blue-500" data-color="#3b82f6"></button>
+            <button type="button" class="color-btn w-5 h-5 rounded-full border-2 border-transparent bg-emerald-500" data-color="#10b981"></button>
+            <button type="button" class="color-btn w-5 h-5 rounded-full border-2 border-transparent bg-amber-500" data-color="#f59e0b"></button>
+            <button type="button" class="color-btn w-5 h-5 rounded-full border-2 border-transparent bg-purple-500" data-color="#8b5cf6"></button>
+            <button type="button" class="color-btn w-5 h-5 rounded-full border-2 border-transparent bg-rose-500" data-color="#f43f5e"></button>
+          </div>
+        </div>
+
+        <button id="btn-add-item" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-2 rounded-lg transition text-xs flex items-center justify-center gap-1.5 shadow-sm">
+          <i class="fa-solid fa-plus"></i> リストに追加
+        </button>
+      </section>
+
+      <!-- 3. 配置作成アクション -->
+      <section class="space-y-2 shrink-0">
+        <button id="btn-auto-pack" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-extrabold py-2.5 rounded-xl transition text-xs flex items-center justify-center gap-2 shadow-md">
+          <i class="fa-solid fa-wand-magic-sparkles text-sm"></i> デッドスペース最小化・最適配置
+        </button>
+        <div class="grid grid-cols-2 gap-2">
+          <button id="btn-print" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 font-medium py-1.5 rounded-lg transition text-xs flex items-center justify-center gap-1">
+            <i class="fa-solid fa-print"></i> 印刷 / PDF保存
+          </button>
+          <button id="btn-clear-all" class="bg-white hover:bg-red-50 text-red-600 border border-red-200 font-medium py-1.5 rounded-lg transition text-xs flex items-center justify-center gap-1">
+            <i class="fa-solid fa-trash-can"></i> 全削除
+          </button>
+        </div>
+      </section>
+
+      <!-- リスト -->
+      <section class="border-t border-slate-200 pt-2 shrink-0">
+        <div class="flex justify-between items-center mb-1.5">
+          <h2 class="text-xs font-bold text-slate-600 uppercase">選択中の荷物一覧</h2>
+          <span id="item-type-count" class="text-[11px] text-slate-400">0種類</span>
+        </div>
+        <div id="item-list-container" class="space-y-1.5 pr-1">
+        </div>
+      </section>
+
+    </aside>
+
+    <!-- 右側: メイン配置キャンバスエリア -->
+    <main id="main-area" class="flex-1 bg-slate-200/60 p-4 flex flex-col items-center relative overflow-y-auto select-none cursor-grab active:cursor-grabbing">
+
+      <!-- ビューポート -->
+      <div id="viewport-stage" class="relative flex-1 w-full min-h-0 p-2 overflow-y-auto">
+        <div id="pan-zoom-container" class="relative transition-transform duration-75 w-full">
+          <!-- 荷台領域：1行あたり最大3列のレスポンシブ・グリッドレイアウト -->
+          <div id="vehicles-grid-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center items-start w-full max-w-7xl mx-auto">
+            <!-- 複数車両の「選択車種カード＋荷台領域」が各コンテナ内に一体化されて動的にレンダリングされます -->
+          </div>
+        </div>
+      </div>
+
+      <div class="no-print mt-2 text-xs text-slate-500 flex items-center gap-5 bg-white/80 px-4 py-1.5 rounded-full border border-slate-200 shrink-0 z-10">
+        <span class="flex items-center gap-1"><i class="fa-solid fa-magnifying-glass-plus text-amber-500"></i> ホイール: 拡大・縮小</span>
+        <span class="flex items-center gap-1"><i class="fa-solid fa-up-down-left-right text-amber-500"></i> 背景ドラッグ: グリッド移動</span>
+        <button id="btn-reset-view" class="ml-2 text-slate-700 hover:text-amber-600 underline font-bold transition">表示位置リセット</button>
+      </div>
+
+    </main>
+
+  </div>
+
+<script>
+  const VEHICLE_PRESETS = [
+    { name: "庸車", width: 2250, depth: 6200 },
+    { name: "髙橋4ｔ", width: 2400, depth: 6700 },
+    { name: "箱①", width: 2020, depth: 6500 },
+    { name: "箱②", width: 2020, depth: 5385 },
+    { name: "箱③", width: 2060, depth: 5030 },
+    { name: "箱④", width: 1940, depth: 4730 },
+    { name: "箱⑤", width: 1940, depth: 4730 },
+    { name: "W", width: 2070, depth: 4400 },
+    { name: "S", width: 1615, depth: 3030 },
+    { name: "箱2ｔ", width: 1780, depth: 3730 }
+  ];
+
+  const RAW_CARGO_DATA = [
+    {"cat": "平型冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "PHO-R4GZ", "w": 1240, "d": 920, "warehouse": "原市"},
+    {"cat": "平型冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "PHO-R5GZ", "w": 1540, "d": 920, "warehouse": "原市"},
+    {"cat": "平型冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "PHO-R6GZ", "w": 1840, "d": 920, "warehouse": "原市"},
+    {"cat": "平型冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "SSM-ES41", "w": 1240, "d": 940, "warehouse": "North"},
+    {"cat": "平型冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "SSM-ES51", "w": 1540, "d": 940, "warehouse": "North"},
+    {"cat": "平型冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "SSM-ES61", "w": 1840, "d": 940, "warehouse": "North"},
+    {"cat": "平型冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "SKM-480", "w": 1240, "d": 940, "warehouse": "借用"},
+    {"cat": "平型冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "SKM-580", "w": 1540, "d": 940, "warehouse": "借用"},
+    {"cat": "平型冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "SKM-680", "w": 1840, "d": 940, "warehouse": "借用"},
+    {"cat": "平型冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "4尺冷蔵ｵｰﾌﾟﾝｹｰｽ", "w": 1240, "d": 920, "warehouse": "借用"},
+    {"cat": "平型冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "5尺冷蔵ｵｰﾌﾟﾝｹｰｽ", "w": 1540, "d": 920, "warehouse": "借用"},
+    {"cat": "平型冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "6尺冷蔵ｵｰﾌﾟﾝｹｰｽ", "w": 1840, "d": 920, "warehouse": "借用"},
+    {"cat": "催事用冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "AOFPE098", "w": 946, "d": 690, "warehouse": "North"},
+    {"cat": "催事用冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "RSR-T3M", "w": 900, "d": 740, "warehouse": "North"},
+    {"cat": "催事用冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "SAR-ES90FB", "w": 940, "d": 847, "warehouse": "North"},
+    {"cat": "ひな段冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "SAR-ES90KR", "w": 940, "d": 790, "warehouse": "North"},
+    {"cat": "ひな段冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "X-SA-HD312", "w": 940, "d": 790, "warehouse": "North"},
+    {"cat": "ひな段冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "SAR-ES900U", "w": 940, "d": 780, "warehouse": "North"},
+    {"cat": "ｱｲﾗﾝﾄﾞ型冷蔵ｹｰｽ", "name": "IMC-R55", "w": 1540, "d": 940, "warehouse": "North"},
+    {"cat": "ｱｲﾗﾝﾄﾞ型冷蔵ｹｰｽ", "name": "IMC-R65", "w": 1840, "d": 940, "warehouse": "North"},
+    {"cat": "ｾﾐ多段冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "HMC-55", "w": 1540, "d": 950, "warehouse": "North"},
+    {"cat": "ｾﾐ多段冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "HMC-64", "w": 1930, "d": 950, "warehouse": "North"},
+    {"cat": "多段冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "EA-MS455", "w": 1350, "d": 960, "warehouse": "North"},
+    {"cat": "多段冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "EA-MS655", "w": 1950, "d": 960, "warehouse": "North"},
+    {"cat": "多段冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "EA-MS655L", "w": 1950, "d": 1010, "warehouse": "North"},
+    {"cat": "多段冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "RSD-TL3Z", "w": 920, "d": 765, "warehouse": "South"},
+    {"cat": "多段冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "RSD-TL4Z", "w": 1220, "d": 765, "warehouse": "South"},
+    {"cat": "多段冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "RSD-S3TFZ", "w": 930, "d": 640, "warehouse": "South"},
+    {"cat": "多段冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "RSD-S4TFZ", "w": 1230, "d": 640, "warehouse": "South"},
+    {"cat": "多段冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "SAR-390G", "w": 930, "d": 640, "warehouse": "South"},
+    {"cat": "多段冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "SAR-345TNA", "w": 940, "d": 525, "warehouse": "South"},
+    {"cat": "多段冷蔵ｵｰﾌﾟﾝｹｰｽ", "name": "SAR-350TN", "w": 930, "d": 640, "warehouse": "South"},
+    {"cat": "ﾎｯﾄ・ｺｰﾙﾄﾞｵｰﾌﾟﾝｼｮｰｹｰｽ", "name": "SAR-U390CHW", "w": 930, "d": 710, "warehouse": "South"},
+    {"cat": "冷蔵対面ｼｮｰｹｰｽ", "name": "TSR-F090X", "w": 940, "d": 555, "warehouse": "原市"},
+    {"cat": "冷蔵対面ｼｮｰｹｰｽ", "name": "TSA-090", "w": 940, "d": 690, "warehouse": "原市"},
+    {"cat": "冷蔵対面ｼｮｰｹｰｽ", "name": "TSA-120", "w": 1240, "d": 690, "warehouse": "原市"},
+    {"cat": "冷蔵対面ｼｮｰｹｰｽ", "name": "TSA-150", "w": 1540, "d": 690, "warehouse": "原市"},
+    {"cat": "冷蔵対面ｼｮｰｹｰｽ", "name": "TSA-180", "w": 1840, "d": 690, "warehouse": "原市"},
+    {"cat": "冷蔵対面ｼｮｰｹｰｽ", "name": "TSA-090X", "w": 940, "d": 690, "warehouse": "原市"},
+    {"cat": "冷蔵対面ｼｮｰｹｰｽ", "name": "TSA-120X", "w": 1240, "d": 690, "warehouse": "原市"},
+    {"cat": "冷蔵対面ｼｮｰｹｰｽ", "name": "TSA-150X", "w": 1540, "d": 690, "warehouse": "原市"},
+    {"cat": "冷蔵対面ｼｮｰｹｰｽ", "name": "TSA-180X", "w": 1840, "d": 690, "warehouse": "原市"},
+    {"cat": "冷蔵対面ｼｮｰｹｰｽ", "name": "SRM-HG52", "w": 1530, "d": 740, "warehouse": "原市"},
+    {"cat": "冷蔵対面ｼｮｰｹｰｽ", "name": "SRM-HG62", "w": 1830, "d": 740, "warehouse": "原市"},
+    {"cat": "卓上冷蔵対面ｼｮｰｹｰｽ", "name": "RCS-T70S", "w": 742, "d": 608, "warehouse": "原市"},
+    {"cat": "冷蔵ﾊｲｸﾘｱｼｮｰｹｰｽ", "name": "AG-54", "w": 469, "d": 485, "warehouse": "原市"},
+    {"cat": "冷蔵ﾊｲｸﾘｱｼｮｰｹｰｽ", "name": "AG-70", "w": 469, "d": 485, "warehouse": "原市"},
+    {"cat": "ﾎｯﾄ・ｺｰﾙﾄﾞｼｮｰｹｰｽ", "name": "SPAS-H532", "w": 540, "d": 640, "warehouse": "原市"},
+    {"cat": "ﾎｯﾄ・ｺｰﾙﾄﾞｼｮｰｹｰｽ", "name": "AG-H60", "w": 469, "d": 485, "warehouse": "原市"},
+    {"cat": "冷蔵ﾊｲｸﾘｱｼｮｰｹｰｽ", "name": "AGV-90", "w": 463, "d": 515, "warehouse": "原市"},
+    {"cat": "冷蔵ﾊｲｸﾘｱｼｮｰｹｰｽ", "name": "SSR-DXZ170", "w": 470, "d": 480, "warehouse": "原市"},
+    {"cat": "冷蔵ﾊｲｸﾘｱｼｮｰｹｰｽ", "name": "AGV-150", "w": 540, "d": 575, "warehouse": "原市"},
+    {"cat": "冷蔵ﾊｲｸﾘｱｼｮｰｹｰｽ", "name": "AGV-200", "w": 540, "d": 575, "warehouse": "原市"},
+    {"cat": "冷蔵ﾊｲｸﾘｱｼｮｰｹｰｽ", "name": "AGV-237W", "w": 555, "d": 593, "warehouse": "原市"},
+    {"cat": "冷蔵ﾊｲｸﾘｱｼｮｰｹｰｽ", "name": "AGV-237B", "w": 555, "d": 593, "warehouse": "原市"},
+    {"cat": "冷蔵ﾊｲｸﾘｱｼｮｰｹｰｽ", "name": "AGV-400", "w": 594, "d": 582, "warehouse": "原市"},
+    {"cat": "冷蔵ﾊｲｸﾘｱｼｮｰｹｰｽ", "name": "AGV-700", "w": 754, "d": 702, "warehouse": "原市"},
+    {"cat": "冷蔵ﾊｲｸﾘｱｼｮｰｹｰｽ", "name": "SSR-561N", "w": 1070, "d": 598, "warehouse": "原市"},
+    {"cat": "冷蔵ﾘｰﾁｲﾝｹｰｽ", "name": "RMS-20", "w": 640, "d": 745, "warehouse": "原市"},
+    {"cat": "冷蔵ﾘｰﾁｲﾝｹｰｽ", "name": "MRS-R20", "w": 640, "d": 690, "warehouse": "原市"},
+    {"cat": "冷蔵ﾘｰﾁｲﾝｹｰｽ", "name": "MRS-R20B", "w": 640, "d": 690, "warehouse": "原市"},
+    {"cat": "冷蔵ﾘｰﾁｲﾝｹｰｽ", "name": "RMS-40", "w": 1240, "d": 745, "warehouse": "原市"},
+    {"cat": "冷蔵ﾘｰﾁｲﾝｹｰｽ", "name": "MRS-R40B", "w": 1240, "d": 690, "warehouse": "原市"},
+    {"cat": "冷蔵ﾘｰﾁｲﾝｹｰｽ", "name": "RMS-60", "w": 1840, "d": 745, "warehouse": "原市"},
+    {"cat": "冷蔵ﾘｰﾁｲﾝｹｰｽ", "name": "MRS-R60B", "w": 1840, "d": 690, "warehouse": "原市"},
+    {"cat": "冷蔵ｽﾗｲﾄ扉ｼｮｰｹｰｽ", "name": "MSS-R40", "w": 1240, "d": 690, "warehouse": "原市"},
+    {"cat": "冷蔵ｽﾗｲﾄ扉ｼｮｰｹｰｽ", "name": "TRM-SS40", "w": 1240, "d": 493, "warehouse": "原市"},
+    {"cat": "前面扉冷蔵ｼｮｰｹｰｽ", "name": "MU-120", "w": 790, "d": 605, "warehouse": "South"},
+    {"cat": "前面扉冷蔵ｼｮｰｹｰｽ", "name": "MU-195", "w": 940, "d": 590, "warehouse": "South"},
+    {"cat": "前後扉冷蔵ｼｮｰｹｰｽ", "name": "MUB-128", "w": 994, "d": 638, "warehouse": "South"},
+    {"cat": "前後扉冷蔵ｼｮｰｹｰｽ", "name": "MUB-187", "w": 1334, "d": 638, "warehouse": "South"},
+    {"cat": "冷蔵ﾈﾀｹｰｽ", "name": "HNC-150B", "w": 1625, "d": 470, "warehouse": "本社"},
+    {"cat": "冷蔵ﾈﾀｹｰｽ", "name": "SS-N1231", "w": 1240, "d": 340, "warehouse": "本社"},
+    {"cat": "冷水ｹｰｽ", "name": "SBW-50", "w": 920, "d": 565, "warehouse": "South"},
+    {"cat": "ﾜｲﾝｾﾗｰ", "name": "SB22", "w": 420, "d": 567, "warehouse": "South"},
+    {"cat": "保冷式ｺｰﾙﾄﾞﾌｰﾄﾞｽﾃｰｼｮﾝ", "name": "ｺｰﾙﾄﾞﾌｰﾄﾞｽﾃｰｼｮﾝ", "w": 1565, "d": 1010, "warehouse": "本社"},
+    {"cat": "ｺｰﾙﾄﾞﾜｺﾞﾝ", "name": "CW-451", "w": 820, "d": 940, "warehouse": "North"},
+    {"cat": "ｽﾗｲﾄﾞ扉冷蔵庫", "name": "BYR-24SAJ", "w": 1790, "d": 800, "warehouse": "South"},
+    {"cat": "ｽﾗｲﾄﾞ扉冷蔵庫", "name": "621CD-S-EC", "w": 1830, "d": 900, "warehouse": "South"},
+    {"cat": "業務用冷蔵庫", "name": "SR-680", "w": 665, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷蔵庫", "name": "SR-680（ﾌｸｼﾏ）", "w": 650, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷蔵庫", "name": "SR-680（ﾊﾟﾅｿﾆｯｸ）", "w": 655, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷蔵庫", "name": "SR-660", "w": 665, "d": 690, "warehouse": "South"},
+    {"cat": "業務用冷蔵庫", "name": "SR-980", "w": 940, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷蔵庫", "name": "SR-960", "w": 940, "d": 690, "warehouse": "South"},
+    {"cat": "業務用冷蔵庫", "name": "SR-1280", "w": 1240, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷蔵庫", "name": "SR-1280（ﾌｸｼﾏ）", "w": 1240, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷蔵庫", "name": "SR-1280（ﾁﾙﾄﾞ）", "w": 1240, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷蔵庫", "name": "SR-1260", "w": 1240, "d": 690, "warehouse": "South"},
+    {"cat": "業務用冷蔵庫", "name": "SR-1260（ﾊﾟﾅｿﾆｯｸ）", "w": 1240, "d": 690, "warehouse": "South"},
+    {"cat": "業務用冷蔵庫", "name": "SR-1880", "w": 1840, "d": 840, "warehouse": "South"},
+    {"cat": "冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "CT-R80", "w": 840, "d": 690, "warehouse": "South"},
+    {"cat": "冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "CT-R90", "w": 940, "d": 640, "warehouse": "South"},
+    {"cat": "冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "CT-R120", "w": 1240, "d": 640, "warehouse": "South"},
+    {"cat": "ﾃｰﾌﾞﾙ型冷蔵ｼｮｰｹｰｽ", "name": "RTS-120", "w": 1240, "d": 640, "warehouse": "South"},
+    {"cat": "冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "CT-R120（D750・ﾄﾞﾛﾜｰ）", "w": 1240, "d": 790, "warehouse": "South"},
+    {"cat": "冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "CT-R150", "w": 1540, "d": 640, "warehouse": "South"},
+    {"cat": "冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "CT-R180", "w": 1840, "d": 640, "warehouse": "South"},
+    {"cat": "冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "4尺冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "w": 1240, "d": 640, "warehouse": "借用"},
+    {"cat": "冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "5尺冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "w": 1540, "d": 640, "warehouse": "借用"},
+    {"cat": "冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "6尺冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "w": 1840, "d": 640, "warehouse": "借用"},
+    {"cat": "冷蔵ｺﾝﾊﾟｸﾄｽﾄｯｶｰ", "name": "PF-R070", "w": 736, "d": 367, "warehouse": "North"},
+    {"cat": "冷蔵ｺﾝﾊﾟｸﾄｽﾄｯｶｰ", "name": "PF-R120", "w": 736, "d": 498, "warehouse": "North"},
+    {"cat": "冷蔵ｽﾄｯｶｰ", "name": "SH-R220", "w": 786, "d": 702, "warehouse": "North"},
+    {"cat": "冷蔵ｽﾄｯｶｰ", "name": "SH-R360", "w": 1151, "d": 702, "warehouse": "North"},
+    {"cat": "冷蔵ｽﾄｯｶｰ", "name": "SH-R500", "w": 1391, "d": 730, "warehouse": "North"},
+    {"cat": "冷蔵ｽﾄｯｶｰ", "name": "SH-R700", "w": 1821, "d": 730, "warehouse": "North"},
+    {"cat": "冷蔵ｽﾄｯｶｰ", "name": "3尺冷蔵ｽﾄｯｶｰ", "w": 786, "d": 702, "warehouse": "借用"},
+    {"cat": "冷蔵ｽﾄｯｶｰ", "name": "4尺冷蔵ｽﾄｯｶｰ", "w": 1151, "d": 702, "warehouse": "借用"},
+    {"cat": "冷蔵ｽﾄｯｶｰ", "name": "5尺冷蔵ｽﾄｯｶｰ", "w": 1391, "d": 730, "warehouse": "借用"},
+    {"cat": "冷蔵ｽﾄｯｶｰ", "name": "6尺冷蔵ｽﾄｯｶｰ", "w": 1821, "d": 730, "warehouse": "借用"},
+    {"cat": "業務用冷凍冷蔵庫", "name": "SFR-680", "w": 665, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷凍冷蔵庫", "name": "SFR-660", "w": 665, "d": 690, "warehouse": "South"},
+    {"cat": "業務用冷凍冷蔵庫", "name": "SFR-960B", "w": 940, "d": 690, "warehouse": "South"},
+    {"cat": "業務用冷凍冷蔵庫", "name": "SFR-1280A", "w": 1240, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷凍冷蔵庫", "name": "SFR-1280A(ﾊﾟﾅｿﾆｯｸ)", "w": 1240, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷凍冷蔵庫", "name": "SFR-1260A", "w": 1250, "d": 640, "warehouse": "South"},
+    {"cat": "業務用冷凍冷蔵庫", "name": "SFR-1280B", "w": 1240, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷凍冷蔵庫", "name": "SFR-1280B(ﾊﾟﾅｿﾆｯｸ)", "w": 1240, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷凍冷蔵庫", "name": "SFR-1260B", "w": 1250, "d": 640, "warehouse": "South"},
+    {"cat": "業務用冷凍冷蔵庫", "name": "SFR-1880B(ﾊﾟﾅｿﾆｯｸ)", "w": 1840, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷凍冷蔵庫", "name": "SFR-1860B", "w": 1840, "d": 640, "warehouse": "South"},
+    {"cat": "冷凍冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "CT-FR120", "w": 1240, "d": 640, "warehouse": "South"},
+    {"cat": "冷凍冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "CT-FR150", "w": 1540, "d": 640, "warehouse": "South"},
+    {"cat": "冷凍冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "CT-FR180", "w": 1840, "d": 640, "warehouse": "South"},
+    {"cat": "冷凍冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "4尺冷凍冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "w": 1240, "d": 640, "warehouse": "借用"},
+    {"cat": "冷凍冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "5尺冷凍冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "w": 1540, "d": 640, "warehouse": "借用"},
+    {"cat": "冷凍冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "6尺冷凍冷蔵ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "w": 1840, "d": 640, "warehouse": "借用"},
+    {"cat": "家庭用冷凍冷蔵庫", "name": "家庭用冷蔵庫1ﾄﾞｱ", "w": 500, "d": 536, "warehouse": "South"},
+    {"cat": "家庭用冷凍冷蔵庫", "name": "家庭用冷凍冷蔵庫小型", "w": 520, "d": 608, "warehouse": "South"},
+    {"cat": "家庭用冷凍冷蔵庫", "name": "家庭用冷凍冷蔵庫中型", "w": 584, "d": 650, "warehouse": "South"},
+    {"cat": "平型冷凍ｵｰﾌﾟﾝｹｰｽ", "name": "SCR-ES5000R", "w": 1540, "d": 940, "warehouse": "North"},
+    {"cat": "平型冷凍ｵｰﾌﾟﾝｹｰｽ", "name": "SCR-ES6000R", "w": 1840, "d": 940, "warehouse": "North"},
+    {"cat": "平型冷凍ｵｰﾌﾟﾝｹｰｽ", "name": "SG-JS480", "w": 1240, "d": 940, "warehouse": "North"},
+    {"cat": "平型冷凍ｵｰﾌﾟﾝｹｰｽ", "name": "MRN-F42Q", "w": 1240, "d": 940, "warehouse": "North"},
+    {"cat": "平型冷凍ｵｰﾌﾟﾝｹｰｽ", "name": "MRN-F51", "w": 1530, "d": 940, "warehouse": "North"},
+    {"cat": "平型冷凍ｵｰﾌﾟﾝｹｰｽ", "name": "MRN-F52", "w": 1530, "d": 940, "warehouse": "North"},
+    {"cat": "平型冷凍ｵｰﾌﾟﾝｹｰｽ", "name": "MRN-F52Q", "w": 1530, "d": 940, "warehouse": "North"},
+    {"cat": "平型冷凍ｵｰﾌﾟﾝｹｰｽ", "name": "SG-JS580", "w": 1540, "d": 940, "warehouse": "North"},
+    {"cat": "平型冷凍ｵｰﾌﾟﾝｹｰｽ", "name": "MRN-F61", "w": 1830, "d": 940, "warehouse": "North"},
+    {"cat": "平型冷凍ｵｰﾌﾟﾝｹｰｽ", "name": "MRN-F62Q", "w": 1830, "d": 940, "warehouse": "North"},
+    {"cat": "平型冷凍ｵｰﾌﾟﾝｹｰｽ", "name": "SG-FS680", "w": 1840, "d": 940, "warehouse": "North"},
+    {"cat": "平型冷凍ｵｰﾌﾟﾝｹｰｽ", "name": "4尺冷凍ｵｰﾌﾟﾝｹｰｽ", "w": 1240, "d": 940, "warehouse": "借用"},
+    {"cat": "平型冷凍ｵｰﾌﾟﾝｹｰｽ", "name": "5尺冷凍ｵｰﾌﾟﾝｹｰｽ", "w": 1530, "d": 940, "warehouse": "借用"},
+    {"cat": "平型冷凍ｵｰﾌﾟﾝｹｰｽ", "name": "6尺冷凍ｵｰﾌﾟﾝｹｰｽ", "w": 1830, "d": 940, "warehouse": "借用"},
+    {"cat": "ｱｲﾗﾝﾄﾞ型冷凍ｹｰｽ", "name": "IMC-F55", "w": 1540, "d": 940, "warehouse": "North"},
+    {"cat": "ｱｲﾗﾝﾄﾞ型冷凍ｹｰｽ", "name": "IMC-F65", "w": 1840, "d": 940, "warehouse": "North"},
+    {"cat": "冷凍ｼｮｰｹｰｽ", "name": "GSR-750", "w": 790, "d": 767, "warehouse": "South"},
+    {"cat": "冷凍ｼｮｰｹｰｽ", "name": "GSR-900", "w": 940, "d": 767, "warehouse": "South"},
+    {"cat": "冷凍ｼｮｰｹｰｽ", "name": "GSR-1050", "w": 1090, "d": 767, "warehouse": "South"},
+    {"cat": "冷凍ｼｮｰｹｰｽ", "name": "GSR-1200", "w": 1240, "d": 767, "warehouse": "South"},
+    {"cat": "冷凍ｼｮｰｹｰｽ", "name": "GSR-1500", "w": 1540, "d": 792, "warehouse": "South"},
+    {"cat": "冷凍ｼｮｰｹｰｽ", "name": "GSR-1800", "w": 1840, "d": 792, "warehouse": "South"},
+    {"cat": "冷凍ｼｮｰｹｰｽ", "name": "RIO-100", "w": 1040, "d": 690, "warehouse": "South"},
+    {"cat": "冷凍ｼｮｰｹｰｽ", "name": "RIO-125", "w": 1290, "d": 690, "warehouse": "South"},
+    {"cat": "冷凍ｼｮｰｹｰｽ", "name": "RIO-150", "w": 1540, "d": 690, "warehouse": "South"},
+    {"cat": "冷凍ｼｮｰｹｰｽ", "name": "GSR-1000PB", "w": 1042, "d": 734, "warehouse": "South"},
+    {"cat": "冷凍ｼｮｰｹｰｽ", "name": "GSR-1500PB", "w": 1551, "d": 734, "warehouse": "South"},
+    {"cat": "冷凍ﾃﾞｨｯﾋﾟﾝｸﾞｹｰｽ", "name": "SCR-VD6", "w": 752, "d": 726, "warehouse": "原市"},
+    {"cat": "冷凍ﾃﾞｨｯﾋﾟﾝｸﾞｹｰｽ", "name": "SCR-VD10", "w": 1105, "d": 818, "warehouse": "原市"},
+    {"cat": "冷凍ﾃﾞｨｯﾋﾟﾝｸﾞｹｰｽ", "name": "SCR-VD14", "w": 1335, "d": 818, "warehouse": "原市"},
+    {"cat": "冷凍ｺﾝﾊﾞｯﾄｹｰｽ", "name": "SPT-F2500", "w": 1192, "d": 742, "warehouse": "South"},
+    {"cat": "冷凍ﾘｰﾁｲﾝｹｰｽ", "name": "SRL-1500", "w": 560, "d": 710, "warehouse": "原市"},
+    {"cat": "冷凍ﾘｰﾁｲﾝｹｰｽ", "name": "SRL-2065", "w": 648, "d": 779, "warehouse": "原市"},
+    {"cat": "冷凍ﾘｰﾁｲﾝｹｰｽ", "name": "MRS-F20B-L", "w": 640, "d": 710, "warehouse": "原市"},
+    {"cat": "冷凍ﾘｰﾁｲﾝｹｰｽ", "name": "MRS-F20B", "w": 640, "d": 690, "warehouse": "原市"},
+    {"cat": "冷凍ﾘｰﾁｲﾝｹｰｽ", "name": "RLS-23", "w": 640, "d": 745, "warehouse": "原市"},
+    {"cat": "冷凍ﾘｰﾁｲﾝｹｰｽ", "name": "RLS-43", "w": 1240, "d": 745, "warehouse": "原市"},
+    {"cat": "冷凍ﾘｰﾁｲﾝｹｰｽ", "name": "MRS-F40", "w": 1240, "d": 690, "warehouse": "原市"},
+    {"cat": "冷凍ﾘｰﾁｲﾝｹｰｽ", "name": "MRS-F40B", "w": 1240, "d": 690, "warehouse": "原市"},
+    {"cat": "冷凍ﾘｰﾁｲﾝｹｰｽ", "name": "4尺冷凍ﾘｰﾁｲﾝｹｰｽ", "w": 1240, "d": 690, "warehouse": "借用"},
+    {"cat": "冷凍ｺﾝﾊﾟｸﾄｽﾄｯｶｰ", "name": "PF-F057", "w": 525, "d": 367, "warehouse": "North"},
+    {"cat": "冷凍ｺﾝﾊﾟｸﾄｽﾄｯｶｰ", "name": "PF-F070", "w": 736, "d": 367, "warehouse": "North"},
+    {"cat": "冷凍ｺﾝﾊﾟｸﾄｽﾄｯｶｰ", "name": "PF-F120", "w": 736, "d": 498, "warehouse": "North"},
+    {"cat": "超低温冷凍ｽﾄｯｶｰ", "name": "DF-300", "w": 1304, "d": 1008, "warehouse": "North"},
+    {"cat": "超低温冷凍ｽﾄｯｶｰ", "name": "DF-400", "w": 1604, "d": 738, "warehouse": "North"},
+    {"cat": "冷凍ｽﾄｯｶｰ", "name": "SH-F220", "w": 786, "d": 702, "warehouse": "North"},
+    {"cat": "冷凍ｽﾄｯｶｰ", "name": "SH-F360", "w": 1151, "d": 702, "warehouse": "North"},
+    {"cat": "冷凍ｽﾄｯｶｰ", "name": "SH-F500", "w": 1391, "d": 730, "warehouse": "North"},
+    {"cat": "冷凍ｽﾄｯｶｰ", "name": "SH-F700", "w": 1821, "d": 730, "warehouse": "North"},
+    {"cat": "冷凍ｽﾄｯｶｰ", "name": "3尺冷凍ｽﾄｯｶｰ", "w": 786, "d": 702, "warehouse": "借用"},
+    {"cat": "冷凍ｽﾄｯｶｰ", "name": "4尺冷凍ｽﾄｯｶｰ", "w": 1151, "d": 702, "warehouse": "借用"},
+    {"cat": "冷凍ｽﾄｯｶｰ", "name": "5尺冷凍ｽﾄｯｶｰ", "w": 1391, "d": 730, "warehouse": "借用"},
+    {"cat": "冷凍ｽﾄｯｶｰ", "name": "6尺冷凍ｽﾄｯｶｰ", "w": 1821, "d": 730, "warehouse": "借用"},
+    {"cat": "業務用冷凍庫", "name": "SF-680", "w": 665, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷凍庫", "name": "SF-660", "w": 665, "d": 690, "warehouse": "South"},
+    {"cat": "業務用冷凍庫", "name": "SF-980", "w": 940, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷凍庫", "name": "SF-960", "w": 940, "d": 690, "warehouse": "South"},
+    {"cat": "業務用冷凍庫", "name": "SF-1280", "w": 1240, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷凍庫", "name": "SF-1280(100V)", "w": 1240, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷凍庫", "name": "SF-1260", "w": 1240, "d": 690, "warehouse": "South"},
+    {"cat": "業務用冷凍庫", "name": "SF-1880", "w": 1840, "d": 840, "warehouse": "South"},
+    {"cat": "業務用冷凍庫", "name": "HF-75LA3-CS", "w": 790, "d": 840, "warehouse": "South"},
+    {"cat": "冷凍ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "CT-F120", "w": 1240, "d": 640, "warehouse": "South"},
+    {"cat": "冷凍ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "CT-F120*D450", "w": 1240, "d": 490, "warehouse": "South"},
+    {"cat": "冷凍ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "CT-F120*D750ﾄﾞﾛﾜｰ", "w": 1240, "d": 790, "warehouse": "South"},
+    {"cat": "冷凍ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "CT-F150", "w": 1540, "d": 640, "warehouse": "South"},
+    {"cat": "冷凍ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "CT-F180", "w": 1840, "d": 640, "warehouse": "South"},
+    {"cat": "冷凍ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "4尺冷凍ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "w": 1240, "d": 640, "warehouse": "South"},
+    {"cat": "冷凍ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "5尺冷凍ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "w": 1540, "d": 640, "warehouse": "South"},
+    {"cat": "冷凍ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "name": "6尺冷凍ｺｰﾙﾄﾞﾃｰﾌﾞﾙ", "w": 1840, "d": 640, "warehouse": "South"},
+    {"cat": "ｷｭｰﾌﾞｱｲｽ製氷機", "name": "IM-25", "w": 435, "d": 490, "warehouse": "本社"},
+    {"cat": "ｷｭｰﾌﾞｱｲｽ製氷機", "name": "IM-45", "w": 670, "d": 490, "warehouse": "本社"},
+    {"cat": "ｷｭｰﾌﾞｱｲｽ製氷機", "name": "IM-75", "w": 740, "d": 565, "warehouse": "本社"},
+    {"cat": "ｷｭｰﾌﾞｱｲｽ製氷機", "name": "IM-95", "w": 740, "d": 565, "warehouse": "本社"},
+    {"cat": "ｷｭｰﾌﾞｱｲｽ製氷機", "name": "IM-115", "w": 740, "d": 565, "warehouse": "本社"},
+    {"cat": "大型製氷機", "name": "IM-90DWL", "w": 970, "d": 585, "warehouse": "本社"},
+    {"cat": "大型製氷機", "name": "IM-90DM", "w": 970, "d": 585, "warehouse": "本社"},
+    {"cat": "大型製氷機", "name": "IM-115DM", "w": 970, "d": 585, "warehouse": "本社"},
+    {"cat": "大型製氷機", "name": "IM-230DM", "w": 1120, "d": 750, "warehouse": "本社"},
+    {"cat": "大型製氷機", "name": "IM-230AM", "w": 740, "d": 830, "warehouse": "本社"},
+    {"cat": "ﾁｯﾌﾟｱｲｽ製氷機", "name": "CM-100", "w": 940, "d": 640, "warehouse": "本社"},
+    {"cat": "ﾁｯﾌﾟｱｲｽ製氷機", "name": "CM-300", "w": 740, "d": 830, "warehouse": "本社"},
+    {"cat": "電気ｸﾞﾘﾄﾞﾙ", "name": "TEG-450", "w": 550, "d": 750, "warehouse": "本社"},
+    {"cat": "電気ｸﾞﾘﾄﾞﾙ", "name": "TEG-600", "w": 620, "d": 660, "warehouse": "本社"},
+    {"cat": "電気ｸﾞﾘﾄﾞﾙ", "name": "TEG-900", "w": 920, "d": 660, "warehouse": "本社"},
+    {"cat": "電気低圧ｸﾞﾘﾗｰ", "name": "GK-6T", "w": 850, "d": 500, "warehouse": "本社"},
+    {"cat": "電気低圧ｸﾞﾘﾗｰ", "name": "TG-10", "w": 810, "d": 640, "warehouse": "本社"},
+    {"cat": "電気ｸﾞﾘﾗｰ", "name": "T-3", "w": 920, "d": 780, "warehouse": "本社"},
+    {"cat": "電気ｻﾀﾏﾝﾀﾞｰ", "name": "TMS-ESM-65", "w": 770, "d": 660, "warehouse": "本社"},
+    {"cat": "温蔵庫", "name": "HW-450", "w": 820, "d": 950, "warehouse": "本社"},
+    {"cat": "床置電気蒸器", "name": "NES-650N", "w": 690, "d": 690, "warehouse": "本社"},
+    {"cat": "床置電気蒸器", "name": "MA-60T", "w": 610, "d": 780, "warehouse": "本社"},
+    {"cat": "ｳｫｰﾏｰﾃｰﾌﾞﾙ", "name": "MEWP-127", "w": 1240, "d": 790, "warehouse": "本社"},
+    {"cat": "自動餃子焼き器", "name": "NGM-5.6AT", "w": 790, "d": 810, "warehouse": "本社"},
+    {"cat": "自動餃子焼き器", "name": "NGM-5.6AC", "w": 790, "d": 810, "warehouse": "本社"},
+    {"cat": "床置電気ﾌﾗｲﾔｰ", "name": "SEFD-18K", "w": 490, "d": 640, "warehouse": "本社"},
+    {"cat": "床置電気ﾌﾗｲﾔｰ", "name": "SEFD-23", "w": 590, "d": 640, "warehouse": "本社"},
+    {"cat": "床置電気ﾌﾗｲﾔｰ", "name": "SEFD-18KW", "w": 940, "d": 640, "warehouse": "本社"},
+    {"cat": "床置電気ﾌﾗｲﾔｰ", "name": "MEF-13W", "w": 740, "d": 640, "warehouse": "本社"},
+    {"cat": "電気ゆで麺器", "name": "TEU-4", "w": 440, "d": 640, "warehouse": "本社"},
+    {"cat": "電気ゆで麺器", "name": "TEU-4AL", "w": 440, "d": 640, "warehouse": "本社"},
+    {"cat": "電気ゆで麺器", "name": "ENB-450H", "w": 490, "d": 590, "warehouse": "本社"},
+    {"cat": "電気ゆで麺器", "name": "ENB-550NH", "w": 590, "d": 640, "warehouse": "本社"},
+    {"cat": "電気ｺﾝﾍﾞｸｼｮﾝｵｰﾌﾞﾝ", "name": "SCO-6", "w": 815, "d": 810, "warehouse": "本社"},
+    {"cat": "電気ｺﾝﾍﾞｸｼｮﾝｵｰﾌﾞﾝ", "name": "SCO-3N", "w": 650, "d": 390, "warehouse": "本社"},
+    {"cat": "電気ｽﾁｰﾑｺﾝﾍﾞｸｼｮﾝｵｰﾌﾞﾝ", "name": "SSC-06SC", "w": 1170, "d": 840, "warehouse": "本社"},
+    {"cat": "電気ｽﾁｰﾑｺﾝﾍﾞｸｼｮﾝｵｰﾌﾞﾝ", "name": "SSC-06D", "w": 950, "d": 840, "warehouse": "本社"},
+    {"cat": "電気ﾋﾟｻﾞｵｰﾌﾞﾝ", "name": "TPO-3E3", "w": 600, "d": 680, "warehouse": "本社"},
+    {"cat": "電気ﾋﾟｻﾞｵｰﾌﾞﾝ", "name": "MPO-B066T", "w": 580, "d": 730, "warehouse": "本社"},
+    {"cat": "ｶﾞｽﾚﾝｼﾞ", "name": "MGR-096CS", "w": 940, "d": 640, "warehouse": "本社"},
+    {"cat": "ｶﾞｽﾃｰﾌﾞﾙ", "name": "MGTX-096C", "w": 900, "d": 600, "warehouse": "本社"},
+    {"cat": "ｶﾞｽﾃｰﾌﾞﾙ", "name": "TSGT-1232", "w": 1200, "d": 600, "warehouse": "本社"},
+    {"cat": "ｶﾞｽｸﾞﾘﾗｰ", "name": "MGK-310B", "w": 1000, "d": 620, "warehouse": "本社"},
+    {"cat": "ｶﾞｽｸﾞﾘﾄﾞﾙ", "name": "MGG-046T LPG", "w": 550, "d": 750, "warehouse": "本社"},
+    {"cat": "ｶﾞｽｸﾞﾘﾄﾞﾙ", "name": "MGG-066T LPG", "w": 600, "d": 600, "warehouse": "本社"},
+    {"cat": "ｶﾞｽｸﾞﾘﾄﾞﾙ", "name": "MGG-126T", "w": 1240, "d": 640, "warehouse": "本社"},
+    {"cat": "ｶﾞｽﾌﾗｲﾔｰ", "name": "MGF-C12TJ", "w": 400, "d": 510, "warehouse": "本社"},
+    {"cat": "ｶﾞｽﾌﾗｲﾔｰ", "name": "MGF-18", "w": 470, "d": 640, "warehouse": "本社"},
+    {"cat": "ｶﾞｽﾌﾗｲﾔｰ", "name": "MGF-23", "w": 570, "d": 640, "warehouse": "本社"},
+    {"cat": "ｶﾞｽ鉄板焼き器", "name": "幅900", "w": 955, "d": 770, "warehouse": "本社"},
+    {"cat": "ｶﾞｽ鉄板焼き器", "name": "YGB-900", "w": 920, "d": 700, "warehouse": "本社"},
+    {"cat": "ｶﾞｽ鉄板焼き器", "name": "幅1200", "w": 1255, "d": 770, "warehouse": "本社"},
+    {"cat": "ｶﾞｽ鉄板焼き器", "name": "YGB-1200", "w": 1220, "d": 700, "warehouse": "本社"},
+    {"cat": "ｶﾞｽゆで麺器", "name": "TU-1N", "w": 690, "d": 760, "warehouse": "本社"},
+    {"cat": "ｶﾞｽゆで麺器", "name": "THU-90AW", "w": 940, "d": 790, "warehouse": "本社"},
+    {"cat": "ｶﾞｽﾃｰﾌﾞﾙ13A", "name": "RGT-1265B 13A", "w": 1200, "d": 600, "warehouse": "本社"},
+    {"cat": "ｶﾞｽﾃｰﾌﾞﾙ13A", "name": "TSGT-0921 13A", "w": 900, "d": 600, "warehouse": "本社"},
+    {"cat": "ｶﾞｽﾃｰﾌﾞﾙ13A", "name": "MGTX-096C 13A", "w": 940, "d": 640, "warehouse": "本社"},
+    {"cat": "ｶﾞｽﾃｰﾌﾞﾙ13A", "name": "RGT-1265B 13A", "w": 1240, "d": 640, "warehouse": "本社"},
+    {"cat": "ｶﾞｽﾚﾝｼﾞ13A", "name": "MGR-096CS 13A", "w": 940, "d": 760, "warehouse": "本社"},
+    {"cat": "ｶﾞｽﾌﾗｲﾔｰ13A", "name": "MGF-23 13A", "w": 570, "d": 640, "warehouse": "本社"},
+    {"cat": "ｶﾞｽﾌﾗｲﾔｰ13A", "name": "MGF-18 13A", "w": 470, "d": 640, "warehouse": "本社"},
+    {"cat": "ｶﾞｽゆで麺器13A", "name": "TU-1N 13A", "w": 650, "d": 870, "warehouse": "本社"},
+    {"cat": "ｶﾞｽゆで麺器13A", "name": "TGUS-60 13A", "w": 640, "d": 640, "warehouse": "本社"},
+    {"cat": "ｶﾞｽｸﾞﾘﾄﾞﾙ13A", "name": "TGG-90N 13A", "w": 940, "d": 705, "warehouse": "本社"},
+    {"cat": "手洗い器", "name": "L-5", "w": 400, "d": 455, "warehouse": "South"},
+    {"cat": "一槽ｼﾝｸ", "name": "BS1-044", "w": 450, "d": 450, "warehouse": "原市"},
+    {"cat": "一槽ｼﾝｸ", "name": "BS1-064", "w": 600, "d": 450, "warehouse": "原市"},
+    {"cat": "一槽ｼﾝｸ", "name": "BS1-046", "w": 450, "d": 600, "warehouse": "原市"},
+    {"cat": "一槽ｼﾝｸ", "name": "BS1-066", "w": 600, "d": 600, "warehouse": "原市"},
+    {"cat": "一槽ｼﾝｸ", "name": "BS1-076", "w": 750, "d": 600, "warehouse": "原市"},
+    {"cat": "一槽ｼﾝｸ", "name": "BS1-096", "w": 900, "d": 600, "warehouse": "原市"},
+    {"cat": "一槽ｼﾝｸ", "name": "BS1-126", "w": 1200, "d": 600, "warehouse": "原市"},
+    {"cat": "一槽ｼﾝｸ", "name": "BS1-077", "w": 750, "d": 750, "warehouse": "原市"},
+    {"cat": "一槽ｼﾝｸ", "name": "BS1-097", "w": 900, "d": 750, "warehouse": "原市"},
+    {"cat": "一槽ｼﾝｸ", "name": "BS1-127", "w": 1200, "d": 750, "warehouse": "原市"},
+    {"cat": "二槽ｼﾝｸ", "name": "BS2-094", "w": 900, "d": 450, "warehouse": "原市"},
+    {"cat": "二槽ｼﾝｸ", "name": "BS2-124", "w": 1200, "d": 450, "warehouse": "原市"},
+    {"cat": "二槽ｼ元ｼﾝｸ", "name": "BS2-096", "w": 900, "d": 600, "warehouse": "原市"},
+    {"cat": "二槽ｼﾝｸ", "name": "BS2-126", "w": 1200, "d": 600, "warehouse": "原市"},
+    {"cat": "二槽ｼﾝｸ", "name": "BS2-156", "w": 1500, "d": 600, "warehouse": "原市"},
+    {"cat": "舟形ｼﾝｸ", "name": "BSF1-126", "w": 1200, "d": 600, "warehouse": "原市"},
+    {"cat": "ﾀﾝｸ付1槽ｼﾝｸ", "name": "BS1-066ﾀﾝｸ式", "w": 600, "d": 600, "warehouse": "原市"},
+    {"cat": "食器洗浄機", "name": "COP-504", "w": 640, "d": 640, "warehouse": "借用"},
+    {"cat": "食器洗浄機", "name": "COP-144", "w": 702, "d": 820, "warehouse": "借用"},
+    {"cat": "調理台", "name": "BW-044N", "w": 450, "d": 450, "warehouse": "South"},
+    {"cat": "調理台", "name": "BW-064N", "w": 600, "d": 450, "warehouse": "South"},
+    {"cat": "調理台", "name": "BW-094N", "w": 900, "d": 450, "warehouse": "South"},
+    {"cat": "調理台", "name": "BW-124N", "w": 1200, "d": 450, "warehouse": "South"},
+    {"cat": "調理台", "name": "BW-154N", "w": 1500, "d": 450, "warehouse": "South"},
+    {"cat": "調理台", "name": "BW-066N", "w": 600, "d": 600, "warehouse": "South"},
+    {"cat": "調理台", "name": "BW-096N", "w": 900, "d": 600, "warehouse": "South"},
+    {"cat": "調理台", "name": "BW-126N", "w": 1200, "d": 600, "warehouse": "South"},
+    {"cat": "調理台", "name": "BW-127N", "w": 1200, "d": 750, "warehouse": "South"},
+    {"cat": "調理台", "name": "BW-156N", "w": 1500, "d": 600, "warehouse": "South"},
+    {"cat": "調理台", "name": "BW-186N", "w": 1800, "d": 600, "warehouse": "South"},
+    {"cat": "調理台", "name": "BW-187N", "w": 1800, "d": 750, "warehouse": "South"},
+    {"cat": "引戸付調理台", "name": "BH-096N", "w": 900, "d": 600, "warehouse": "North"},
+    {"cat": "引戸付調理台", "name": "BH-126N", "w": 1200, "d": 600, "warehouse": "North"},
+    {"cat": "引戸付調理台", "name": "BH-156N", "w": 1500, "d": 600, "warehouse": "North"},
+    {"cat": "引戸付調理台", "name": "BH-186N", "w": 1800, "d": 600, "warehouse": "North"},
+    {"cat": "ｺﾝﾛ台", "name": "BWG-064N", "w": 600, "d": 450, "warehouse": "South"},
+    {"cat": "ｺﾝﾛ台", "name": "BWG-066N", "w": 600, "d": 600, "warehouse": "South"},
+    {"cat": "ｺﾝﾛ台", "name": "BWG-096N", "w": 900, "d": 600, "warehouse": "South"},
+    {"cat": "ｺﾝﾛ台", "name": "BWG-126N", "w": 1200, "d": 600, "warehouse": "South"},
+    {"cat": "ｺﾝﾛ台", "name": "BWG-156N", "w": 1500, "d": 600, "warehouse": "South"},
+    {"cat": "ｺﾝﾛ台", "name": "BWG-186N", "w": 1800, "d": 600, "warehouse": "South"},
+    {"cat": "ｺﾝﾛ台 BG有", "name": "BWG-066", "w": 600, "d": 600, "warehouse": "South"},
+    {"cat": "ｺﾝﾛ台 BG有", "name": "BWG-126", "w": 1200, "d": 600, "warehouse": "South"},
+    {"cat": "食器棚", "name": "BDS-096", "w": 900, "d": 600, "warehouse": "North"},
+    {"cat": "食器棚", "name": "BDS-127", "w": 1200, "d": 750, "warehouse": "North"},
+    {"cat": "食器消毒保管庫", "name": "MSH10-21SC", "w": 960, "d": 570, "warehouse": "South"},
+    {"cat": "食器消毒保管庫", "name": "NHE-10AS", "w": 1000, "d": 620, "warehouse": "South"},
+    {"cat": "包丁まな板殺菌庫", "name": "TNS-60SF", "w": 640, "d": 540, "warehouse": "South"},
+    {"cat": "ｸﾞﾗﾆｰﾀﾏｼﾝ", "name": "BigBizⅡ", "w": 610, "d": 610, "warehouse": "本社"},
+    {"cat": "ｸﾞﾗﾆｰﾀﾏｼﾝ", "name": "BigBizⅠ", "w": 385, "d": 640, "warehouse": "本社"},
+    {"cat": "電動かき氷機", "name": "HF-300P", "w": 485, "d": 565, "warehouse": "本社"},
+    {"cat": "ｿﾌﾄｸﾘｰﾑｻｰﾊﾞｰ", "name": "SSF-M440P(水冷)", "w": 548, "d": 800, "warehouse": "本社"},
+    {"cat": "ｿﾌﾄｸﾘｰﾑｻｰﾊﾞｰ", "name": "SSF-M161PN", "w": 515, "d": 795, "warehouse": "本社"},
+    {"cat": "ｳｫｰﾀｰｻｰﾊﾞｰ", "name": "SD-B185H", "w": 440, "d": 780, "warehouse": "本社"},
+    {"cat": "ｳｫｰﾀｰｻｰﾊﾞｰ", "name": "SD-P105", "w": 440, "d": 780, "warehouse": "本社"},
+    {"cat": "ｳｫｰﾀｰｻｰﾊﾞｰ", "name": "DWD-C300", "w": 260, "d": 500, "warehouse": "本社"},
+    {"cat": "ﾊﾑｽﾗｲｻｰ", "name": "MS-30MB", "w": 660, "d": 630, "warehouse": "本社"},
+    {"cat": "ｻｰﾋﾞｽﾜｺﾞﾝ", "name": "ｻｰﾋﾞｽﾜｺﾞﾝ", "w": 460, "d": 907, "warehouse": "North"},
+    {"cat": "ﾜｲﾔｰｼｪﾙﾌ", "name": "W600 ﾜｲﾔｰｼｪﾙﾌ", "w": 610, "d": 610, "warehouse": "North"},
+    {"cat": "ﾜｲﾔｰｼｪﾙﾌ", "name": "W600ｼｪﾙﾌ", "w": 610, "d": 610, "warehouse": "North"},
+    {"cat": "ﾜｲﾔｰｼｪﾙﾌ", "name": "ﾜｲﾔｰｼｪﾙﾌ(W600)", "w": 610, "d": 610, "warehouse": "North"},
+    {"cat": "ﾜｲﾔｰｼｪﾙﾌ", "name": "W900 ﾜｲﾔｰｼｪﾙﾌ", "w": 910, "d": 460, "warehouse": "North"},
+    {"cat": "ﾜｲﾔｰｼｪﾙﾌ", "name": "W900ｼｪﾙﾌ", "w": 910, "d": 460, "warehouse": "North"},
+    {"cat": "ﾜｲﾔｰｼｪﾙﾌ", "name": "ﾜｲﾔｰｼｪﾙﾌ(W900)", "w": 910, "d": 460, "warehouse": "North"},
+    {"cat": "ﾜｲﾔｰｼｪﾙﾌ", "name": "W1200 ﾜｲﾔｰｼｪﾙﾌ", "w": 1200, "d": 460, "warehouse": "North"},
+    {"cat": "ﾜｲﾔｰｼｪﾙﾌ", "name": "W1200ｼｪﾙﾌ", "w": 1200, "d": 460, "warehouse": "North"},
+    {"cat": "ﾜｲﾔｰｼｪﾙﾌ", "name": "ﾜｲﾔｰｼｪﾙﾌ(W1200)", "w": 1200, "d": 460, "warehouse": "North"},
+    {"cat": "ｽﾎﾟｯﾄｸｰﾗｰ", "name": "ｽﾎﾟｯﾄｸｰﾗｰ", "w": 430, "d": 470, "warehouse": "本社"},
+    {"cat": "専用運搬資材", "name": "DD専用台車(2蓮)", "w": 980, "d": 730, "warehouse": "本社"},
+    {"cat": "専用運搬資材", "name": "DD専用台車(1蓮)", "w": 470, "d": 730, "warehouse": "本社"},
+    {"cat": "専用運搬資材", "name": "カゴ車", "w": 1130, "d": 820, "warehouse": "本社"},
+    {"cat": "専用運搬資材", "name": "NE-1802専用台車", "w": 960, "d": 610, "warehouse": "本社"}
+  ];
+
+  const WAREHOUSE_COLORS = {
+    "原市": "#f43f5e",
+    "South": "#3b82f6",
+    "North": "#10b981",
+    "本社": "#f59e0b",
+    "借用": "#eb5e9d"
+  };
+
+  // --- 複数車両管理データモデル ---
+  let vehicles = [];
+  let currentVehicleIndex = 0;
+
+  // カット＆ペースト用データ管理
+  let activeDraggingTarget = null; // 現在ドラッグまたはホバー中の対象
+  let clipboardItem = null; // カットされた荷物データ
+
+  let selectedColor = "#3b82f6";
+  let scale = 0.055;
+
+  let panX = 0;
+  let panY = 0;
+  let viewZoom = 1.0;
+  let isPanning = false;
+  let panStartX = 0;
+  let panStartY = 0;
+
+  const vehicleTabs = document.getElementById('vehicle-tabs');
+  const btnAddVehicle = document.getElementById('btn-add-vehicle');
+
+  const vehicleSelect = document.getElementById('vehicle-select');
+  const inputTruckWidth = document.getElementById('input-truck-width');
+  const inputTruckDepth = document.getElementById('input-truck-depth');
+  const categorySelect = document.getElementById('category-select');
+  const itemDatasetSelect = document.getElementById('item-dataset-select');
+  const previewItemName = document.getElementById('preview-item-name');
+  const previewItemSize = document.getElementById('preview-item-size');
+  const itemWInput = document.getElementById('item-w-input');
+  const itemDInput = document.getElementById('item-d-input');
+  const itemCountInput = document.getElementById('item-count-input');
+  
+  const headerVehicleName = document.getElementById('header-vehicle-name');
+  const headerOccupancyRate = document.getElementById('header-occupancy-rate');
+  const headerItemCount = document.getElementById('header-item-count');
+  const itemListContainer = document.getElementById('item-list-container');
+  const itemTypeCount = document.getElementById('item-type-count');
+  const mainArea = document.getElementById('main-area');
+  
+  const vehiclesGridContainer = document.getElementById('vehicles-grid-container');
+
+  const panZoomContainer = document.getElementById('pan-zoom-container');
+  const btnResetView = document.getElementById('btn-reset-view');
+
+  // --- 全角・半角・大文字小文字・スペース等を吸収して正規化するヘルパー関数 ---
+  function normalizeText(str) {
+    if (!str) return '';
+    return String(str)
+      .normalize('NFKC')                          // 全角英数字/記号・半角カナを統一
+      .toLowerCase()                              // 大文字小文字を統一
+      .replace(/[\s\u3000\-_‐－―ー]/g, '');       // 空白、ハイフン、長音記号等の表記揺れを除去
+  }
+
+  function init() {
+    VEHICLE_PRESETS.forEach((v, idx) => {
+      const opt = document.createElement('option');
+      opt.value = idx;
+      opt.textContent = `${v.name} (${v.width.toLocaleString()}×${v.depth.toLocaleString()} mm)`;
+      vehicleSelect.appendChild(opt);
+    });
+
+    const categories = [...new Set(RAW_CARGO_DATA.map(d => d.cat))];
+    categories.forEach(cat => {
+      const opt = document.createElement('option');
+      opt.value = cat;
+      opt.textContent = cat;
+      categorySelect.appendChild(opt);
+    });
+
+    populateCargoSelect();
+
+    // 最初の車両を作成
+    addNewVehicle(VEHICLE_PRESETS[0], true);
+
+    vehicleSelect.addEventListener('change', (e) => {
+      const preset = VEHICLE_PRESETS[e.target.value];
+      setVehicle(preset.name, preset.width, preset.depth);
+    });
+
+    inputTruckWidth.addEventListener('change', () => {
+      const v = getCurrentVehicle();
+      setVehicle(v.name, parseInt(inputTruckWidth.value) || 2000, v.depth);
+    });
+
+    inputTruckDepth.addEventListener('change', () => {
+      const v = getCurrentVehicle();
+      setVehicle(v.name, v.width, parseInt(inputTruckDepth.value) || 5000);
+    });
+
+    categorySelect.addEventListener('change', populateCargoSelect);
+    itemDatasetSelect.addEventListener('change', handleCargoSelectChange);
+
+    document.querySelectorAll('.color-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.color-btn').forEach(b => b.classList.replace('border-slate-900', 'border-transparent'));
+        btn.classList.replace('border-transparent', 'border-slate-900');
+        selectedColor = btn.dataset.color;
+      });
+    });
+
+    document.getElementById('btn-add-item').addEventListener('click', handleAddItem);
+    document.getElementById('btn-clear-all').addEventListener('click', clearAllItems);
+    document.getElementById('btn-auto-pack').addEventListener('click', autoPackItems);
+    document.getElementById('btn-print').addEventListener('click', () => window.print());
+
+    btnAddVehicle.addEventListener('click', () => {
+      addNewVehicle(VEHICLE_PRESETS[0]);
+    });
+
+    // Excel読み込みボタン＆ドラッグ＆ドロップの設定
+    const excelDropZone = document.getElementById('excel-drop-zone');
+    const excelFileInput = document.getElementById('excel-file-input');
+
+    document.getElementById('btn-trigger-excel').addEventListener('click', (e) => {
+      e.stopPropagation();
+      excelFileInput.click();
+    });
+
+    excelDropZone.addEventListener('click', () => {
+      excelFileInput.click();
+    });
+
+    excelFileInput.addEventListener('change', handleExcelUpload);
+
+    // ドラッグ＆ドロップのイベント設定
+    setupDragAndDrop(excelDropZone);
+
+    setupPanAndZoom();
+    setupCutAndPaste();
+
+    const resizeObserver = new ResizeObserver(() => {
+      updateBedDimensions();
+    });
+    resizeObserver.observe(mainArea);
+
+    addDemoItems();
+
+    setTimeout(() => {
+      updateBedDimensions();
+    }, 100);
+  }
+
+  // --- カードへのファイルドラッグ＆ドロップ設定 ---
+  function setupDragAndDrop(dropZone) {
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+      dropZone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+      }, false);
+    });
+
+    ['dragenter', 'dragover'].forEach(eventName => {
+      dropZone.addEventListener(eventName, () => {
+        dropZone.classList.add('border-emerald-500', 'bg-emerald-100/90', 'scale-[1.02]');
+      }, false);
+    });
+
+    ['dragleave', 'drop'].forEach(eventName => {
+      dropZone.addEventListener(eventName, () => {
+        dropZone.classList.remove('border-emerald-500', 'bg-emerald-100/90', 'scale-[1.02]');
+      }, false);
+    });
+
+    dropZone.addEventListener('drop', (e) => {
+      const dt = e.dataTransfer;
+      const files = dt.files;
+
+      if (files && files.length > 0) {
+        const file = files[0];
+        const ext = file.name.split('.').pop().toLowerCase();
+        if (['xlsx', 'xls', 'csv'].includes(ext)) {
+          processExcelFile(file);
+        } else {
+          alert('ExcelまたはCSVファイル（.xlsx, .xls, .csv）をドロップしてください。');
+        }
+      }
+    });
+  }
+
+  // --- Ctrl+X / Ctrl+V 及び Delete キーボードショートカットイベントのセットアップ ---
+  function setupCutAndPaste() {
+    window.addEventListener('keydown', (e) => {
+      // テキスト入力中は動作をスキップ
+      if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) {
+        return;
+      }
+
+      // Delete キー または Backspace キー (削除)
+      if (e.key === 'Delete' || e.key === 'Backspace') {
+        if (activeDraggingTarget) {
+          e.preventDefault();
+          const { item, vehicleIndex } = activeDraggingTarget;
+          const targetVehicle = vehicles[vehicleIndex];
+          if (!targetVehicle) return;
+
+          // 車両から削除
+          targetVehicle.placedItems = targetVehicle.placedItems.filter(i => i.id !== item.id);
+          activeDraggingTarget = null;
+
+          renderPlacedItems();
+          updateMetrics();
+        }
+      }
+
+      // Ctrl+X または Cmd+X (カット)
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'x') {
+        if (activeDraggingTarget) {
+          e.preventDefault();
+          const { item, vehicleIndex } = activeDraggingTarget;
+          const targetVehicle = vehicles[vehicleIndex];
+          if (!targetVehicle) return;
+
+          // 対象荷物を保持（位置情報は初期化）
+          clipboardItem = {
+            name: item.name,
+            width: item.width,
+            depth: item.depth,
+            color: item.color
+          };
+
+          // 元の車両から削除
+          targetVehicle.placedItems = targetVehicle.placedItems.filter(i => i.id !== item.id);
+          activeDraggingTarget = null;
+
+          renderPlacedItems();
+          updateMetrics();
+        }
+      }
+
+      // Ctrl+V または Cmd+V (ペースト)
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'v') {
+        if (clipboardItem) {
+          e.preventDefault();
+          const currentV = getCurrentVehicle();
+
+          // アクティブな車両にコピーを追加
+          currentV.placedItems.push({
+            id: 'item-' + Date.now() + '-' + Math.random().toString(36).substr(2, 5),
+            name: clipboardItem.name,
+            width: clipboardItem.width,
+            depth: clipboardItem.depth,
+            color: clipboardItem.color,
+            x: 0,
+            y: 0
+          });
+
+          // 自動パッキングを実行して綺麗に配置
+          autoPackItems();
+        }
+      }
+    });
+  }
+
+  // --- 複数車両管理ロジック ---
+  function getCurrentVehicle() {
+    return vehicles[currentVehicleIndex];
+  }
+
+  function addNewVehicle(preset, isInitial = false) {
+    const vehicleId = 'v-' + Date.now() + '-' + Math.random().toString(36).substr(2, 4);
+    const newVehicle = {
+      id: vehicleId,
+      name: `${preset.name} (${vehicles.length + 1})`,
+      width: preset.width,
+      depth: preset.depth,
+      placedItems: []
+    };
+    vehicles.push(newVehicle);
+    if (!isInitial) {
+      currentVehicleIndex = vehicles.length - 1;
+    }
+    renderTabs();
+    if (!isInitial) {
+      switchVehicle(currentVehicleIndex);
+    }
+    return newVehicle;
+  }
+
+  function renderTabs() {
+    vehicleTabs.innerHTML = '';
+    vehicles.forEach((v, index) => {
+      const tab = document.createElement('div');
+      const isActive = index === currentVehicleIndex;
+      tab.className = `flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold cursor-pointer transition select-none ${
+        isActive 
+          ? 'bg-amber-500 text-slate-950 shadow-md' 
+          : 'bg-slate-700 text-slate-300 hover:bg-slate-600 hover:text-white'
+      }`;
+
+      tab.innerHTML = `
+        <span class="truncate max-w-[120px]"><i class="fa-solid fa-truck text-[11px] mr-1"></i>${v.name}</span>
+        ${vehicles.length > 1 ? `<button class="btn-remove-tab text-slate-400 hover:text-red-500 ml-1 p-0.5"><i class="fa-solid fa-xmark"></i></button>` : ''}
+      `;
+
+      tab.addEventListener('click', (e) => {
+        if (e.target.closest('.btn-remove-tab')) return;
+        switchVehicle(index);
+      });
+
+      if (vehicles.length > 1) {
+        const removeBtn = tab.querySelector('.btn-remove-tab');
+        removeBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          removeVehicle(index);
+        });
+      }
+
+      vehicleTabs.appendChild(tab);
+    });
+  }
+
+  function switchVehicle(index) {
+    currentVehicleIndex = index;
+    renderTabs();
+    const v = getCurrentVehicle();
+
+    // セレクトボックス等の表示合わせ
+    inputTruckWidth.value = v.width;
+    inputTruckDepth.value = v.depth;
+
+    updateBedDimensions();
+    updateMetrics();
+  }
+
+  function removeVehicle(index) {
+    if (vehicles.length <= 1) return;
+    vehicles.splice(index, 1);
+    if (currentVehicleIndex >= vehicles.length) {
+      currentVehicleIndex = vehicles.length - 1;
+    }
+    switchVehicle(currentVehicleIndex);
+  }
+
+  // --- Excel / CSV ファイル読み込み処理関数 ---
+  function handleExcelUpload(e) {
+    const file = e.target.files[0];
+    if (file) {
+      processExcelFile(file);
+    }
+    e.target.value = '';
+  }
+
+// --- Excel / CSV 読み込み＆自動照合コア処理（型式列・台数列固定検索版） ---
+  function processExcelFile(file) {
+    const reader = new FileReader();
+
+    reader.onload = function(evt) {
+      try {
+        const data = new Uint8Array(evt.target.result);
+        const workbook = XLSX.read(data, { type: 'array' });
+
+        // 1. 最初のシートを参照
+        const firstSheetName = workbook.SheetNames[0];
+        const worksheet = workbook.Sheets[firstSheetName];
+        const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+        if (!jsonData || jsonData.length === 0) {
+          alert("ファイル内にデータが見つかりませんでした。");
+          return;
+        }
+
+        // マスターデータの型式名を事前に正規化
+        const normalizedCargoData = RAW_CARGO_DATA.map(cargo => ({
+          ...cargo,
+          normName: normalizeText(cargo.name)
+        }));
+
+        // --- 2. 1行目から順に検索し、最初に型式および台数が入力されている列番号を特定 ---
+        let modelColumnIndex = -1;
+        let qtyColumnIndex = -1;
+        let startRowIndex = -1;
+
+        for (let r = 0; r < jsonData.length; r++) {
+          const row = jsonData[r];
+          if (!Array.isArray(row)) continue;
+
+          for (let c = 0; c < row.length; c++) {
+            const cellValue = row[c];
+            if (cellValue === null || cellValue === undefined) continue;
+
+            const targetNormStr = normalizeText(cellValue);
+            if (!targetNormStr) continue;
+
+            // マスタデータと照合して型式かどうか判定
+            const isMatched = normalizedCargoData.some(cargo => 
+              cargo.normName && targetNormStr.includes(cargo.normName)
+            );
+
+            if (isMatched) {
+              // 型式列より右側のセルから最初に数値が見つかる列を「台数列」として特定
+              for (let rightCol = c + 1; rightCol < row.length; rightCol++) {
+                const rightVal = row[rightCol];
+                if (rightVal !== null && rightVal !== undefined && rightVal !== '') {
+                  const parsedNum = parseInt(rightVal, 10);
+                  if (!isNaN(parsedNum) && parsedNum > 0) {
+                    modelColumnIndex = c;       // 型式列番号を固定
+                    qtyColumnIndex = rightCol;  // 台数列番号を固定
+                    startRowIndex = r;          // デフォルトの開始位置
+
+                    // --- 同列の上方向へ検索し、ヘッダー（型式・商品名等）の直下の行を開始位置に設定 ---
+                    const headerKeywords = ['機種', '型式', '商品名', '品名', '名称', 'アイテム'];
+                    for (let topR = r - 1; topR >= 0; topR--) {
+                      const topCell = jsonData[topR] ? jsonData[topR][modelColumnIndex] : null;
+                      if (topCell !== null && topCell !== undefined) {
+                        const topNormStr = normalizeText(topCell);
+                        if (headerKeywords.some(h => topNormStr.includes(normalizeText(h)))) {
+                          startRowIndex = topR + 1; // ヘッダー行のすぐ次の行を開始位置にする
+                          break;
+                        }
+                      }
+                    }
+
+                    break;
+                  }
+                }
+              }
+            }
+            if (modelColumnIndex !== -1) break;
+          }
+          if (modelColumnIndex !== -1) break; // 最初に検出された時点で列探索を終了
+        }
+
+        if (modelColumnIndex === -1 || qtyColumnIndex === -1) {
+          alert("マスタに該当する型式、または対応する数量データが見つかりませんでした。");
+          return;
+        }
+
+        // --- 3. 特定された「型式列」と「台数列」からのみデータを抽出 ---
+        let addedCount = 0;
+        const currentV = getCurrentVehicle();
+        const unmappedModelsMap = new Map();
+
+        for (let r = startRowIndex; r < jsonData.length; r++) {
+          const row = jsonData[r];
+          if (!Array.isArray(row)) continue;
+
+          // 指定された「型式列」のセルを参照
+          const cellValue = row[modelColumnIndex];
+          if (cellValue === null || cellValue === undefined) continue;
+
+          const cellStr = String(cellValue).trim();
+          const targetNormStr = normalizeText(cellValue);
+
+          if (!targetNormStr) continue;
+          if (['機種', '型式', '商品名', '品名', '台数', '数量', '名称', 'アイテム'].some(h => targetNormStr.includes(h))) {
+            continue;
+          }
+
+          // 指定された「台数列」からのみ数量を取得
+          let qty = 0; // デフォルト初期値（取得できなかった場合も安全のため0）
+          const qtyVal = row[qtyColumnIndex];
+
+          // セルが存在し、かつ空文字でない場合のみ数値判定を行う
+          if (qtyVal !== null && qtyVal !== undefined && String(qtyVal).trim() !== '') {
+            // 数値以外（「台」などの全角・半角テキスト）を除去して数値化
+            const parsedNum = parseInt(String(qtyVal).replace(/[^0-9]/g, ''), 10);
+
+            // NaN（数値に変換できない文字列のみだった場合）でなければ0を含めて採用
+            if (!isNaN(parsedNum)) {
+              qty = parsedNum;
+            }
+          } else {
+            // 指定列が空欄・未入力の場合の扱い
+            // ※「空欄なら1台として扱う」仕様にしたい場合はここを qty = 1; に変更してください
+            qty = 0; 
+          }
+
+          // マスタ照合
+          const matchedCargo = normalizedCargoData.find(cargo => 
+            cargo.normName && targetNormStr.includes(cargo.normName)
+          );
+
+          if (matchedCargo) {
+            // 1. matchedCargoの倉庫名から色を取得（未登録の倉庫の場合はデフォルト色を設定）
+            const itemColor = WAREHOUSE_COLORS[matchedCargo.warehouse] || '#94a3b8';
+
+            // 車両データへ追加
+            for (let q = 0; q < qty; q++) {
+              currentV.placedItems.push({
+                id: 'item-' + Date.now() + '-' + Math.random().toString(36).substr(2, 5),
+                name: matchedCargo.name,
+                width: matchedCargo.w,
+                depth: matchedCargo.d,
+                color: itemColor, // ← selectedColor から取得した色に変更
+                x: 0,
+                y: 0
+              });
+              addedCount++;
+            }
+          } else {
+            // マスタ未該当の文字列（純粋な数値セルなどを除外）の台数をカウント
+            if (isNaN(Number(cellStr))) {
+              const currentQty = unmappedModelsMap.get(cellStr) || 0;
+              unmappedModelsMap.set(cellStr, currentQty + qty);
+            }
+          }
+        }
+
+        // --- 4. 結果表示アラート ---
+        let resultMsg = "";
+        if (addedCount > 0) {
+          resultMsg += `${addedCount} 個の荷物を現在の車両「${currentV.name}」に追加しました。\n`;
+        } else {
+          resultMsg += "マスタに該当する商品が見つかりませんでした。\n";
+        }
+
+        if (unmappedModelsMap.size > 0) {
+          let totalUnmappedQty = 0;
+          unmappedModelsMap.forEach(q => totalUnmappedQty += q);
+
+          resultMsg += `\n【注意：マスタ未該当の機種/文字列 (${unmappedModelsMap.size}種類 / 計${totalUnmappedQty}台)】\n`;
+          unmappedModelsMap.forEach((qty, modelName) => {
+            resultMsg += `・${modelName} : ${qty}台\n`;
+          });
+
+          if (confirm(resultMsg + "\n未該当の機種一覧をExcelファイルとしてダウンロードしますか？")) {
+            exportUnmappedToExcel(unmappedModelsMap);
+          }
+        } else {
+          alert(resultMsg);
+        }
+
+        if (addedCount > 0) {
+          autoPackItems();
+        }
+
+      } catch (err) {
+        console.error(err);
+        alert("ファイルの読み込み中にエラーが発生しました。");
+      }
+    };
+
+    reader.readAsArrayBuffer(file);
+  }
+
+  // マスタ未該当の機種一覧をExcelファイルとして出力する関数
+  function exportUnmappedToExcel(unmappedModelsMap) {
+    if (!unmappedModelsMap || unmappedModelsMap.size === 0) return;
+
+    const excelData = [
+      ["No.", "マスタ未該当機種・文字列", "台数"]
+    ];
+
+    let index = 1;
+    let totalQty = 0;
+    unmappedModelsMap.forEach((qty, modelName) => {
+      excelData.push([index++, modelName, qty]);
+      totalQty += qty;
+    });
+
+    excelData.push(["", "合計", totalQty]);
+
+    const worksheet = XLSX.utils.aoa_to_sheet(excelData);
+
+    worksheet['!cols'] = [
+      { wch: 8 },  // No.
+      { wch: 35 }, // 機種名
+      { wch: 12 }  // 台数
+    ];
+
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "未該当機種一覧");
+
+    const today = new Date().toISOString().split('T')[0];
+    const fileName = `マスタ未該当リスト_${today}.xlsx`;
+    XLSX.writeFile(workbook, fileName);
+  }
+
+function setupPanAndZoom() {
+    // ホイールイベントでカーソル位置を中心に拡大縮小
+    mainArea.addEventListener('wheel', (e) => {
+      e.preventDefault();
+
+      const zoomFactor = e.deltaY < 0 ? 1.1 : 0.9;
+      const nextZoom = Math.max(0.3, Math.min(4.0, viewZoom * zoomFactor));
+
+      // ズーム比率（新しい倍率 / 現在の倍率）
+      const zoomRatio = nextZoom / viewZoom;
+
+      // mainArea（視界の枠）に対するカーソルの相対座標を取得
+      const rect = mainArea.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+
+      // カーソル位置を中心に移動量を補正（Pan位置の再計算）
+      panX = mouseX - zoomRatio * (mouseX - panX);
+      panY = mouseY - zoomRatio * (mouseY - panY);
+
+      viewZoom = nextZoom;
+      applyTransform();
+    }, { passive: false });
+
+    // ドラッグ移動（パン）処理
+    mainArea.addEventListener('pointerdown', (e) => {
+      if (
+        e.target.closest('.placed-item') || 
+        e.target.closest('.vehicle-card-header') || 
+        e.target.closest('button') || 
+        e.target.closest('select') || 
+        e.target.closest('input')
+      ) {
+        return;
+      }
+      isPanning = true;
+      panStartX = e.clientX - panX;
+      panStartY = e.clientY - panY;
+      mainArea.setPointerCapture(e.pointerId);
+    });
+
+    mainArea.addEventListener('pointermove', (e) => {
+      if (!isPanning) return;
+      panX = e.clientX - panStartX;
+      panY = e.clientY - panStartY;
+      applyTransform();
+    });
+
+    const stopPan = (e) => {
+      if (isPanning) {
+        isPanning = false;
+        try { mainArea.releasePointerCapture(e.pointerId); } catch (_) {}
+      }
+    };
+
+    mainArea.addEventListener('pointerup', stopPan);
+    mainArea.addEventListener('pointercancel', stopPan);
+
+    // リセットボタンの設定
+    btnResetView.addEventListener('click', () => {
+      viewZoom = 1.0;
+      panX = 0;
+      panY = 0;
+      applyTransform();
+    });
+  }
+
+  // 変形（Translate / Scale）の適用
+  function applyTransform() {
+    panZoomContainer.style.transform = `translate(${panX}px, ${panY}px) scale(${viewZoom})`;
+    panZoomContainer.style.transformOrigin = '0 0'; // 左上基準で計算するため必須
+  }
+
+  function populateCargoSelect() {
+    itemDatasetSelect.innerHTML = '';
+    const cat = categorySelect.value;
+    const filtered = cat ? RAW_CARGO_DATA.filter(d => d.cat === cat) : RAW_CARGO_DATA;
+
+    itemDatasetSelect.innerHTML = '';
+    filtered.forEach((item) => {
+      const opt = document.createElement('option');
+      opt.value = JSON.stringify(item);
+      opt.textContent = `${item.name} (${item.w}×${item.d} mm)`;
+      itemDatasetSelect.appendChild(opt);
+    });
+
+    if (filtered.length > 0) {
+      updatePreview(filtered[0]);
+    }
+  }
+
+  function handleCargoSelectChange() {
+    const item = JSON.parse(itemDatasetSelect.value);
+    updatePreview(item);
+  }
+
+  function updatePreview(item) {
+    previewItemName.textContent = item.name;
+    previewItemSize.textContent = `W${item.w}×D${item.d}`;
+    itemWInput.value = item.w;
+    itemDInput.value = item.d;
+
+    if (item.warehouse && WAREHOUSE_COLORS[item.warehouse]) {
+      selectedColor = WAREHOUSE_COLORS[item.warehouse];
+    }
+  }
+
+  function setVehicle(name, width, depth) {
+    const v = getCurrentVehicle();
+    v.name = name;
+    v.width = width;
+    v.depth = depth;
+
+    inputTruckWidth.value = width;
+    inputTruckDepth.value = depth;
+
+    renderTabs();
+    updateBedDimensions();
+    updateMetrics();
+  }
+
+  function updateBedDimensions() {
+    renderPlacedItems();
+  }
+
+  function handleAddItem() {
+    const v = getCurrentVehicle();
+    const name = previewItemName.textContent;
+    const w = parseInt(itemWInput.value) || 500;
+    const d = parseInt(itemDInput.value) || 500;
+    const count = parseInt(itemCountInput.value) || 1;
+
+    for (let i = 0; i < count; i++) {
+      v.placedItems.push({
+        id: 'item-' + Date.now() + '-' + Math.random().toString(36).substr(2, 5),
+        name,
+        width: w,
+        depth: d,
+        color: selectedColor,
+        x: 0,
+        y: 0
+      });
+    }
+
+    autoPackItems();
+  }
+
+  function addDemoItems() {
+    const currentV = getCurrentVehicle();
+    const demoItems = [
+      RAW_CARGO_DATA[0],
+      RAW_CARGO_DATA[19],
+      RAW_CARGO_DATA[84],
+      RAW_CARGO_DATA[213],
+      RAW_CARGO_DATA[99]
+    ];
+    demoItems.forEach(base => {
+      let color = selectedColor;
+      if (base.warehouse && WAREHOUSE_COLORS[base.warehouse]) {
+        color = WAREHOUSE_COLORS[base.warehouse];
+      }
+      currentV.placedItems.push({
+        id: 'item-' + Date.now() + '-' + Math.random().toString(36).substr(2, 5),
+        name: base.name,
+        width: base.w,
+        depth: base.d,
+        color: color,
+        x: 0,
+        y: 0
+      });
+    });
+
+    autoPackItems();
+  }
+
+  function clearAllItems() {
+    const v = getCurrentVehicle();
+    v.placedItems = [];
+    renderPlacedItems();
+    updateMetrics();
+  }
+
+  function autoPackItems() {
+    const v = getCurrentVehicle();
+    if (v.placedItems.length === 0) {
+      renderPlacedItems();
+      updateMetrics();
+      return;
+    }
+
+    const V_WIDTH = v.width;
+    const V_DEPTH = v.depth;
+
+    function simulatePacking(itemsList, packingStrategy) {
+      const resultItems = [];
+      let totalOverflow = 0;
+      let maxYUsed = 0;
+
+      itemsList.forEach(itemOriginal => {
+        const item = { ...itemOriginal };
+        let bestCandidate = null;
+
+        let orientations;
+        if (packingStrategy.allowRotation) {
+          if (packingStrategy.preferOrientation === 'force_rotated') {
+            orientations = [{ w: item.depth, d: item.width }, { w: item.width, d: item.depth }];
+          } else if (packingStrategy.preferOrientation === 'aspect') {
+            orientations = (item.width >= item.depth)
+              ? [{ w: item.width, d: item.depth }, { w: item.depth, d: item.width }]
+              : [{ w: item.depth, d: item.width }, { w: item.width, d: item.depth }];
+          } else {
+            orientations = [{ w: item.width, d: item.depth }, { w: item.depth, d: item.width }];
+          }
+        } else {
+          orientations = [{ w: item.width, d: item.depth }];
+        }
+
+        orientations.forEach(ori => {
+          if (ori.w > V_WIDTH || ori.d > V_DEPTH) return;
+
+          const candidateXPoints = new Set([0]);
+          const candidateYPoints = new Set([0]);
+
+          resultItems.forEach(placed => {
+            if (placed.y < V_DEPTH) {
+              if (placed.x + placed.width <= V_WIDTH - ori.w) candidateXPoints.add(placed.x + placed.width);
+              if (placed.y + placed.depth <= V_DEPTH - ori.d) candidateYPoints.add(placed.y + placed.depth);
+            }
+          });
+
+          const sortedY = Array.from(candidateYPoints).sort((a,b) => a - b);
+          const sortedX = Array.from(candidateXPoints).sort((a,b) => a - b);
+
+          for (const y of sortedY) {
+            for (const x of sortedX) {
+              if (x + ori.w > V_WIDTH || y + ori.d > V_DEPTH) continue;
+
+              let hasOverlap = false;
+              for (const p of resultItems) {
+                if (p.y >= V_DEPTH) continue;
+                if (
+                  x < p.x + p.width &&
+                  x + ori.w > p.x &&
+                  y < p.y + p.depth &&
+                  y + ori.d > p.y
+                ) {
+                  hasOverlap = true;
+                  break;
+                }
+              }
+
+              if (!hasOverlap) {
+                if (!bestCandidate || y < bestCandidate.y || (y === bestCandidate.y && x < bestCandidate.x)) {
+                  bestCandidate = { x, y, w: ori.w, d: ori.d };
+                }
+                break;
+              }
+            }
+            if (bestCandidate && y > bestCandidate.y) break;
+          }
+        });
+
+        if (bestCandidate) {
+          item.width = bestCandidate.w;
+          item.depth = bestCandidate.d;
+          item.x = bestCandidate.x;
+          item.y = bestCandidate.y;
+          maxYUsed = Math.max(maxYUsed, item.y + item.depth);
+        } else {
+          item.x = 0;
+          item.y = V_DEPTH + totalOverflow;
+          totalOverflow += item.depth + 20;
+        }
+
+        resultItems.push(item);
+      });
+
+      const overflowCount = resultItems.filter(i => i.y >= V_DEPTH).length;
+      
+      let packedArea = 0;
+      resultItems.forEach(i => {
+        if (i.y < V_DEPTH) packedArea += (i.width * i.depth);
+      });
+
+      const score = (overflowCount * 1000000000) - (packedArea * 100) + maxYUsed;
+
+      return { resultItems, score, overflowCount, maxYUsed, packedArea };
+    }
+
+    const strategies = [
+      { sortFn: (a, b) => Math.max(b.width, b.depth) - Math.max(a.width, a.depth), allowRotation: true, preferOrientation: 'default' },
+      { sortFn: (a, b) => (b.width * b.depth) - (a.width * a.depth), allowRotation: true, preferOrientation: 'default' },
+      { sortFn: (a, b) => (b.width * b.depth) - (a.width * a.depth), allowRotation: true, preferOrientation: 'force_rotated' },
+      { sortFn: (a, b) => b.width - a.width, allowRotation: true, preferOrientation: 'aspect' },
+      { sortFn: (a, b) => (b.width + b.depth) - (a.width + a.depth), allowRotation: true, preferOrientation: 'default' },
+      { sortFn: (a, b) => Math.min(b.width, b.depth) - Math.min(a.width, a.depth), allowRotation: true, preferOrientation: 'default' }
+    ];
+
+    let bestSolution = null;
+
+    strategies.forEach(strat => {
+      const sortedItems = [...v.placedItems].sort(strat.sortFn);
+      const simResult = simulatePacking(sortedItems, strat);
+
+      if (!bestSolution || simResult.score < bestSolution.score) {
+        bestSolution = simResult;
+      }
+    });
+
+    if (bestSolution) {
+      const fittedItems = bestSolution.resultItems.filter(i => i.y < V_DEPTH);
+      const overflowItems = bestSolution.resultItems.filter(i => i.y >= V_DEPTH);
+
+      v.placedItems = fittedItems;
+
+      if (overflowItems.length > 0) {
+        let nextVehicleIndex = currentVehicleIndex + 1;
+        let nextVehicle = vehicles[nextVehicleIndex];
+
+        if (!nextVehicle) {
+          nextVehicle = addNewVehicle(VEHICLE_PRESETS[0], true);
+        }
+
+        overflowItems.forEach(item => {
+          nextVehicle.placedItems.push({
+            ...item,
+            x: 0,
+            y: 0
+          });
+        });
+
+        renderPlacedItems();
+        updateMetrics();
+
+        const tempCurrentIndex = currentVehicleIndex;
+        currentVehicleIndex = nextVehicleIndex;
+        autoPackItems();
+        currentVehicleIndex = tempCurrentIndex;
+
+        return;
+      }
+    }
+
+    renderPlacedItems();
+    updateMetrics();
+  }
+
+  function renderPlacedItems() {
+    // 荷台領域および上部車種カードのレスポンシブ・グリッド描画
+    vehiclesGridContainer.innerHTML = '';
+
+    vehicles.forEach((v, vIndex) => {
+      const isCurrent = (vIndex === currentVehicleIndex);
+      const cardWrapper = document.createElement('div');
+      cardWrapper.className = `vehicle-card-wrapper flex flex-col items-center p-3 rounded-xl border transition-all cursor-pointer ${
+        isCurrent ? 'bg-white shadow-md border-amber-400 ring-2 ring-amber-400/30' : 'bg-white/70 border-slate-300 opacity-90'
+      }`;
+
+      cardWrapper.addEventListener('click', (e) => {
+        if (!e.target.closest('.placed-item')) {
+          switchVehicle(vIndex);
+        }
+      });
+
+      const bedPixelW = Math.round(v.width * scale);
+      const bedPixelH = Math.round(v.depth * scale);
+
+      let totalArea = 0;
+      v.placedItems.forEach(i => totalArea += (i.width * i.depth));
+      const truckArea = v.width * v.depth;
+      const rate = truckArea > 0 ? Math.round((totalArea / truckArea) * 100) : 0;
+
+      cardWrapper.innerHTML = `
+        <!-- 車種カード（ボタンとして機能し、クリックで編集対象車種を切り替え） -->
+        <div role="button" tabindex="0" class="vehicle-card-header w-full border rounded-xl px-4 py-2 shadow-sm flex items-center justify-between mb-3 transition-all duration-200 cursor-pointer ${
+          isCurrent 
+            ? 'bg-amber-500/10 border-amber-500 text-slate-900 ring-2 ring-amber-400/30 font-bold' 
+            : 'bg-white/95 border-slate-300 text-slate-700 hover:bg-slate-100 hover:border-slate-400'
+        }">
+          <div class="flex items-center gap-2">
+            <span class="text-[10px] ${isCurrent ? 'text-amber-700' : 'text-slate-400'} font-bold uppercase">選択車種</span>
+            <span class="font-bold text-slate-900 text-sm truncate max-w-[110px]">${v.name}</span>
+          </div>
+          <div class="flex items-center gap-2 text-xs">
+            <span class="text-slate-500">${v.placedItems.length}台</span>
+            <span class="font-bold ${rate > 100 ? 'text-red-500' : 'text-emerald-600'}">${rate}%</span>
+          </div>
+        </div>
+
+        <div class="truck-3d-scene flex flex-col items-center justify-center">
+          <!-- 横寸法 -->
+          <div class="w-full flex items-center justify-center mb-1 text-slate-500 font-mono text-[10px] shrink-0" style="width: ${bedPixelW + 8}px;">
+            <div class="h-1.5 border-l border-slate-400"></div>
+            <div class="flex-1 border-t border-dashed border-slate-400 relative flex justify-center items-center">
+              <span class="bg-slate-100 px-1 text-[10px] font-semibold text-slate-700">幅 ${v.width.toLocaleString()} mm</span>
+            </div>
+            <div class="h-1.5 border-r border-slate-400"></div>
+          </div>
+
+          <div class="flex items-center justify-center">
+            <!-- 縦寸法 -->
+            <div class="flex flex-col items-center justify-center mr-1 text-slate-500 font-mono text-[10px] h-full shrink-0">
+              <div class="w-1.5 border-t border-slate-400"></div>
+              <div class="flex-1 border-l border-dashed border-slate-400 relative flex justify-center items-center min-h-[60px]">
+                <span class="dim-depth-label bg-slate-100 px-0.5 text-[10px] font-semibold text-slate-700 [writing-mode:vertical-lr]">奥行 ${v.depth.toLocaleString()} mm</span>
+              </div>
+              <div class="w-1.5 border-b border-slate-400"></div>
+            </div>
+
+            <!-- 荷台領域本体 -->
+            <div class="truck-container relative bg-slate-900 border-2 border-slate-900 rounded-sm shadow-md flex flex-col overflow-hidden" style="width: ${bedPixelW + 4}px;">
+              <div class="w-full bg-slate-900 text-white text-[7px] font-bold py-0.5 text-center tracking-widest uppercase flex items-center justify-center gap-1 shrink-0 z-10">
+                <i class="fa-solid fa-caret-up text-amber-400"></i> 前方
+              </div>
+
+              <div id="truck-bed-${v.id}" class="truck-bed relative bg-white overflow-hidden" style="width: ${bedPixelW}px; height: ${bedPixelH}px;">
+              </div>
+
+              <div class="w-full bg-slate-300 border-t border-slate-400 text-slate-700 text-[7px] font-bold py-0.5 text-center tracking-wider shrink-0 z-10">
+                後方
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+
+      // 上部選択車種カード要素のクリックイベント設定
+      const cardHeader = cardWrapper.querySelector('.vehicle-card-header');
+      cardHeader.addEventListener('click', (e) => {
+        e.stopPropagation();
+        switchVehicle(vIndex);
+      });
+
+      // キーボード操作（Enter / Space）対応
+      cardHeader.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          switchVehicle(vIndex);
+        }
+      });
+
+      vehiclesGridContainer.appendChild(cardWrapper);
+
+      // 車両ごとの荷物要素を描画
+      const currentTruckBed = document.getElementById(`truck-bed-${v.id}`);
+      v.placedItems.forEach(item => {
+        const el = document.createElement('div');
+        el.className = 'placed-item absolute rounded border border-white/80 flex flex-col justify-center items-center text-white cursor-grab active:cursor-grabbing select-none shadow-sm overflow-visible';
+        el.id = item.id;
+
+        const wPx = Math.max(10, item.width * scale);
+        const dPx = Math.max(10, item.depth * scale);
+
+        el.style.width = `${wPx}px`;
+        el.style.height = `${dPx}px`;
+        el.style.left = `${item.x * scale}px`;
+        el.style.top = `${item.y * scale}px`;
+        el.style.backgroundColor = item.color;
+
+        const fontSize = Math.max(7, Math.min(10, Math.min(wPx, dPx) / 4.5));
+
+        el.innerHTML = `
+          <div class="font-bold truncate px-0.5 pointer-events-none leading-tight" style="font-size: ${fontSize}px;">
+            ${item.name}
+          </div>
+          <div class="opacity-90 font-mono pointer-events-none leading-tight" style="font-size: ${Math.max(6, fontSize - 2)}px;">
+            ${item.width}×${item.depth}
+          </div>
+        `;
+
+        el.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (el.dataset.wasDragged === 'true') return;
+          if (currentVehicleIndex !== vIndex) {
+            switchVehicle(vIndex);
+          }
+          rotateItem(item.id);
+        });
+
+        // マウスオーバー時に対象として保持（ドラッグ開始前にもカットや削除ができるように）
+        el.addEventListener('pointerenter', () => {
+          activeDraggingTarget = { item, vehicleIndex: vIndex };
+        });
+        el.addEventListener('pointerleave', () => {
+          if (activeDraggingTarget && !el.classList.contains('dragging')) {
+            activeDraggingTarget = null;
+          }
+        });
+
+        setupDrag(el, item, vIndex);
+        currentTruckBed.appendChild(el);
+      });
+    });
+
+    updateItemListUI();
+  }
+
+  function setupDrag(element, item, vehicleIndex) {
+    let startX, startY, origX, origY;
+
+    element.addEventListener('pointerdown', (e) => {
+      if (e.button !== 0) return;
+      e.stopPropagation();
+
+      // 現在ドラッグ中のアイテムを記録（Ctrl+X や Delete 用）
+      activeDraggingTarget = { item, vehicleIndex };
+
+      if (currentVehicleIndex !== vehicleIndex) {
+        switchVehicle(vehicleIndex);
+      }
+
+      const v = getCurrentVehicle();
+
+      element.setPointerCapture(e.pointerId);
+      element.classList.add('dragging');
+      element.dataset.wasDragged = 'false';
+
+      startX = e.clientX;
+      startY = e.clientY;
+      origX = item.x;
+      origY = item.y;
+
+      const onPointerMove = (pe) => {
+        let clientDx = pe.clientX - startX;
+        let clientDy = pe.clientY - startY;
+
+        let dx = (clientDx / viewZoom) / scale;
+        let dy = (clientDy / viewZoom) / scale;
+
+        if (Math.abs(pe.clientX - startX) > 3 || Math.abs(pe.clientY - startY) > 3) {
+          element.dataset.wasDragged = 'true';
+        }
+
+        let newX = Math.round((origX + dx) / 10) * 10;
+        let newY = Math.round((origY + dy) / 10) * 10;
+
+        newX = Math.max(0, Math.min(Math.max(0, v.width - item.width), newX));
+        newY = Math.max(0, Math.min(Math.max(0, v.depth - item.depth), newY));
+
+        v.placedItems.forEach(other => {
+          if (other.id === item.id) return;
+
+          const isOverlapping = 
+            newX < other.x + other.width &&
+            newX + item.width > other.x &&
+            newY < other.y + other.depth &&
+            newY + item.depth > other.y;
+
+          if (isOverlapping) {
+            const overlapLeft   = (newX + item.width) - other.x;
+            const overlapRight  = (other.x + other.width) - newX;
+            const overlapTop    = (newY + item.depth) - other.y;
+            const overlapBottom = (other.y + other.depth) - newY;
+
+            const minOverlap = Math.min(overlapLeft, overlapRight, overlapTop, overlapBottom);
+
+            if (minOverlap === overlapLeft)   newX = other.x - item.width;
+            else if (minOverlap === overlapRight)  newX = other.x + other.width;
+            else if (minOverlap === overlapTop)    newY = other.y - item.depth;
+            else if (minOverlap === overlapBottom) newY = other.y + other.depth;
+          }
+        });
+
+        newX = Math.max(0, Math.min(Math.max(0, v.width - item.width), newX));
+        newY = Math.max(0, Math.min(Math.max(0, v.depth - item.depth), newY));
+
+        item.x = newX;
+        item.y = newY;
+
+        element.style.left = `${newX * scale}px`;
+        element.style.top = `${newY * scale}px`;
+
+        updateMetrics();
+      };
+
+      const onPointerUp = (pe) => {
+        try { element.releasePointerCapture(pe.pointerId); } catch(err) {}
+        element.classList.remove('dragging');
+        element.removeEventListener('pointermove', onPointerMove);
+        element.removeEventListener('pointerup', onPointerUp);
+      };
+
+      element.addEventListener('pointermove', onPointerMove);
+      element.addEventListener('pointerup', onPointerUp);
+    });
+  }
+
+  function rotateItem(id) {
+    const v = getCurrentVehicle();
+    const item = v.placedItems.find(i => i.id === id);
+    if (!item) return;
+
+    const tmp = item.width;
+    item.width = item.depth;
+    item.depth = tmp;
+
+    if (item.x + item.width > v.width) {
+      item.x = Math.max(0, v.width - item.width);
+    }
+    if (item.y + item.depth > v.depth) {
+      item.y = Math.max(0, v.depth - item.depth);
+    }
+
+    v.placedItems.forEach(other => {
+      if (other.id === item.id) return;
+
+      const isOverlapping = 
+        item.x < other.x + other.width &&
+        item.x + item.width > other.x &&
+        item.y < other.y + other.depth &&
+        item.y + item.depth > other.y;
+
+      if (isOverlapping) {
+        const overlapLeft   = (item.x + item.width) - other.x;
+        const overlapRight  = (other.x + other.width) - item.x;
+        const overlapTop    = (item.y + item.depth) - other.y;
+        const overlapBottom = (item.y + item.depth) - item.y;
+
+        const minOverlap = Math.min(overlapLeft, overlapRight, overlapTop, overlapBottom);
+
+        if (minOverlap === overlapLeft)   item.x = other.x - item.width;
+        else if (minOverlap === overlapRight)  item.x = other.x + other.width;
+        else if (minOverlap === overlapTop)    item.y = other.y - item.depth;
+        else if (minOverlap === overlapBottom) item.y = other.y + other.depth;
+      }
+    });
+
+    item.x = Math.max(0, Math.min(Math.max(0, v.width - item.width), item.x));
+    item.y = Math.max(0, Math.min(Math.max(0, v.depth - item.depth), item.y));
+
+    renderPlacedItems();
+    updateMetrics();
+  }
+
+  function updateMetrics() {
+    const v = getCurrentVehicle();
+    
+    // 現在選択中車両の情報更新
+    headerVehicleName.textContent = v ? v.name : '-';
+
+    // 床面積利用率の計算（現在選択されている車両）
+    if (v) {
+      const truckArea = v.width * v.depth;
+      let currentVehicleArea = 0;
+      v.placedItems.forEach(item => {
+        currentVehicleArea += item.width * item.depth;
+      });
+      const rate = truckArea > 0 ? Math.round((currentVehicleArea / truckArea) * 100) : 0;
+      headerOccupancyRate.textContent = `${rate}%`;
+    } else {
+      headerOccupancyRate.textContent = `0%`;
+    }
+
+    // 全車両の合計個数と選択中車両の個数の計算
+    let grandTotalCount = 0;
+    vehicles.forEach(vehicle => {
+      grandTotalCount += vehicle.placedItems.length;
+    });
+
+    const currentCount = v ? v.placedItems.length : 0;
+
+    // 車両数が複数ある場合は「選択車両/全合計」を表示し、1台のみのときは「X 台」とシンプル表示
+    if (vehicles.length > 1) {
+      headerItemCount.textContent = `${currentCount} 台 (計 ${grandTotalCount} 台)`;
+    } else {
+      headerItemCount.textContent = `${currentCount} 台`;
+    }
+
+    headerOccupancyRate.className = "font-bold text-emerald-400 ml-1";
+  }
+
+  function updateItemListUI() {
+    itemListContainer.innerHTML = '';
+    const v = getCurrentVehicle();
+
+    if (!v) {
+      itemTypeCount.textContent = `0 種類`;
+      itemListContainer.innerHTML = '<div class="text-center py-6 text-slate-400 text-xs">積載中の荷物はありません</div>';
+      return;
+    }
+
+    const summary = {};
+    v.placedItems.forEach(item => {
+      const key = `${item.name}_${item.width}_${item.depth}_${item.color}`;
+      if (!summary[key]) {
+        summary[key] = { name: item.name, width: item.width, depth: item.depth, color: item.color, count: 0, ids: [] };
+      }
+      summary[key].count++;
+      summary[key].ids.push(item.id);
+    });
+
+    const keys = Object.keys(summary);
+    itemTypeCount.textContent = `${keys.length} 種類`;
+
+    if (keys.length === 0) {
+      itemListContainer.innerHTML = '<div class="text-center py-6 text-slate-400 text-xs">積載中の荷物はありません</div>';
+      return;
+    }
+
+    keys.forEach(key => {
+      const group = summary[key];
+      const card = document.createElement('div');
+      card.className = "bg-slate-50 border border-slate-200 rounded-lg p-2 text-xs flex justify-between items-center";
+      
+      card.innerHTML = `
+        <div class="flex items-center gap-2 overflow-hidden">
+          <div class="w-3 h-3 rounded-full shrink-0" style="background-color: ${group.color};"></div>
+          <div class="truncate">
+            <div class="font-bold text-slate-700 truncate">${group.name}</div>
+            <div class="text-[10px] text-slate-400 font-mono">${group.width}×${group.depth} mm</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-1.5 shrink-0">
+          <span class="bg-slate-200 text-slate-700 font-bold px-2 py-0.5 rounded-full text-[10px]">${group.count}台</span>
+        </div>
+      `;
+
+      itemListContainer.appendChild(card);
+    });
+  }
+
+  window.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
